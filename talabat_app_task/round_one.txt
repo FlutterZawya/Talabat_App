@@ -12,7 +12,7 @@
 => custom_auth_option_button.dart (Enum)
 ------------------------------------------------------------------
 #mahmoud:
-=> app_text_styles.dart {2}
+=> app_styles.dart {2}
 => app_icons {4}
 => app_name(TalaBat) { } [Done]
 => extract fontfamily {2.1} [Done]
@@ -39,7 +39,7 @@
 	- functions
 	     - auth_option_switch.dart
 	- styles
-	     - app_text_styles.dart
+	     - app_styles.dart
 	     - app_colors.dart
 	     - app_images.dart
     
