@@ -1,0 +1,45 @@
+===================		==============
+====talabat app====		Round 1 =    =
+=================== 		==============
+		============
+		===Tasks===-===> Deadline: friday,28/2 at 10:00 pm
+		============
+==================================================================
+#ziad:
+=> app_colors.dart {1}
+=> app_images.dart {3}
+=> splash_view { }
+=> custom_auth_option_button.dart (Enum)
+------------------------------------------------------------------
+#mahmoud:
+=> app_text_styles.dart {2}
+=> app_icons {4}
+=> app_name(TalaBat) { }
+=> extract fontfamily {2.1}
+------------------------------------------------------------------
+#youssef:
+=> custom_button.dart {5}
+=> custom_text_button.dart {5}
+=> custom_text_form_field.dart {5}
+=> custom_password_text_form_field.dart {5}
+		=============
+		====files====
+		=============
+==================================================================
+#core:
+    - utils
+	- enum
+	     - auth_option_type.dart
+	- widgets
+	     - custom_button.dart
+	     - custom_text_button.dart
+	     - custom_text_form_field.dart
+	     - custom_password_text_form_field.dart
+	     - custom_auth_option_button.dart
+	- functions
+	     - auth_option_switch.dart
+	- styles
+	     - app_text_styles.dart
+	     - app_colors.dart
+	     - app_images.dart
+    
