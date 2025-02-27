@@ -14,7 +14,7 @@
 #mahmoud:
 => app_text_styles.dart {2}
 => app_icons {4}
-=> app_name(TalaBat) { }
+=> app_name(TalaBat) { } [Done]
 => extract fontfamily {2.1}
 ------------------------------------------------------------------
 #youssef:
