@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_single_quotes
-class Assets {
-  Assets._();
+class AppImages {
+  AppImages._();
   
   /// Assets for imagesAppIcon
   /// assets/images/appIcon.png
