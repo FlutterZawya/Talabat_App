@@ -8,8 +8,9 @@
 #ziad:
 => app_colors.dart {1} [Done]
 => app_images.dart {3} [Done]
-=> splash_view { }
-=> custom_auth_option_button.dart (Enum)
+=> splash_view { } 
+=> custom_auth_option_button.dart (Enum) [Done]
+=> app_router.dart 
 ------------------------------------------------------------------
 #mahmoud:
 => app_styles.dart {2} [Done]
@@ -28,6 +29,14 @@
 ==================================================================
 #core:
     - utils
+	   - functions
+	     	- auth_option_switch.dart
+	   - styles
+	    	- app_styles.dart
+	     	- app_colors.dart
+	     	- app_images.dart
+	   - routes
+	   	 	- app_routes.dart
 	- enum
 	     - auth_option_type.dart
 	- widgets
@@ -36,10 +45,7 @@
 	     - custom_text_form_field.dart
 	     - custom_password_text_form_field.dart
 	     - custom_auth_option_button.dart
-	- functions
-	     - auth_option_switch.dart
-	- styles
-	     - app_styles.dart
-	     - app_colors.dart
-	     - app_images.dart
+	- models
+		 - auth_option_data.dart
+	
     
