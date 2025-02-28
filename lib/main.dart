@@ -10,6 +10,16 @@ class TalabatApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: Scaffold(
+        body: SizedBox(
+          height: double.infinity,
+          width: double.infinity,
+          child: Column(
+            children: [],
+          ),
+        ),
+      ),
+    );
   }
 }
