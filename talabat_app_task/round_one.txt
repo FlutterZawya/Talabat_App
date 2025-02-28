@@ -6,8 +6,8 @@
 		============
 ==================================================================
 #ziad:
-=> app_colors.dart {1}
-=> app_images.dart {3}
+=> app_colors.dart {1} [Done]
+=> app_images.dart {3} [Done]
 => splash_view { }
 => custom_auth_option_button.dart (Enum)
 ------------------------------------------------------------------
