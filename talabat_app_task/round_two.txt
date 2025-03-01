@@ -10,7 +10,7 @@
 => the old task
 ------------------------------------------------------------------
 #mahmoud:
-=> create custom auth appbar
+=> create custom auth appbar [Done]
 => forget password page
 => login page
 ------------------------------------------------------------------
