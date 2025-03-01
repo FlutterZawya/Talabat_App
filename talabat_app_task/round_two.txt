@@ -10,8 +10,10 @@
 => the old task
 ------------------------------------------------------------------
 #mahmoud:
+=> create custom auth appbar
 => forget password page
 => login page
 ------------------------------------------------------------------
 #youssef:
+=> [the old Tasks]
 => sign up page
