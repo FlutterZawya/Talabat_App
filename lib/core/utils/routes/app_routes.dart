@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import '../../../features/auth_option/presentation/views/auth_option_view.dart';
+import '../../../features/auth/presentation/views/auth_option_view.dart';
 import '../../../features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRoutes {
