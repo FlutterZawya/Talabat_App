@@ -150,13 +150,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.0"
-<<<<<<< HEAD
   flutter_localizations:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
-=======
   flutter_spinkit:
     dependency: "direct main"
     description:
@@ -165,7 +163,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.2.1"
->>>>>>> ff8f71bc754b903f7cf67cf26b95effb0536c869
   flutter_svg:
     dependency: "direct main"
     description:
