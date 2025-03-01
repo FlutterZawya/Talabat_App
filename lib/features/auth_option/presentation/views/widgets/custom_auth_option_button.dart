@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:talabat_app/core/enum/auth_option_type.dart';
 import 'package:talabat_app/core/models/auth_option_data.dart';
-import 'package:talabat_app/core/utils/functions/auth_option_type_method.dart';
+import '../../../../../core/utils/functions/auth_option_type_method.dart';
 import 'package:talabat_app/core/utils/styles/app_colors.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
 
