@@ -6,8 +6,8 @@ import 'package:talabat_app/core/utils/styles/app_images.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
 import 'custom_auth_option_button.dart';
 
-class AuthOptionBody extends StatelessWidget {
-  const AuthOptionBody({super.key});
+class AuthOptionViewBody extends StatelessWidget {
+  const AuthOptionViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
