@@ -13,7 +13,7 @@ class CustomEmailTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
-      hintText: 'Email Address',
+      labelText: 'Email Address',
       controller: emailController,
       validator: (email) {
         return validateEmail(email);

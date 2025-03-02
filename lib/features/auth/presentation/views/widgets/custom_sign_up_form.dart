@@ -35,7 +35,7 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CustomTextFormField(
-                hintText: 'First name',
+                labelText: 'First name',
                 controller: firstNameController,
                 validator: (name) {
                   return validateUsername(name);
@@ -45,7 +45,7 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
                 height: 20,
               ),
               CustomTextFormField(
-                hintText: 'Last name',
+                labelText: 'Last name',
                 controller: lastNameController,
                 validator: (name) {
                   return validateUsername(name);
@@ -73,6 +73,9 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
                 'Passwords should be between 6 and 16 characters',
                 style: AppStyles.medium12,
               ),
+              SizedBox(
+                height: 30,
+              ),
               CustomCheckBox(
                 value: checkBox,
                 onChanged: (value) {
@@ -80,6 +83,9 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
                     checkBox = value;
                   });
                 },
+              ),
+              SizedBox(
+                height: 30,
               ),
               CustomButton(
                 text: 'Create your account',

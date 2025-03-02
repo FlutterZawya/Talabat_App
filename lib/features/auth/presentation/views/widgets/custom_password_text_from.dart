@@ -17,7 +17,7 @@ class CustomPasswordTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
-      hintText: 'Password',
+      labelText: 'Password',
       controller: passwordController,
       obscureText: obscure,
       suffix: IconButton(
