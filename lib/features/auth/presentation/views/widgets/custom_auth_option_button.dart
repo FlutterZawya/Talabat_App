@@ -18,22 +18,25 @@ class CustomAuthOptionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AuthOptionData model = authOptionTypeMethod(type);
-    return TextButton(
-      onPressed: () {},
-      style: TextButton.styleFrom(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: AppColors.black),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+            side: BorderSide(color: AppColors.black),
+          ),
         ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        child: Row(
-          children: [
-            SvgPicture.asset(model.image, height: 30),
-            SizedBox(width: 60),
-            Text(model.text, style: AppStyles.medium18),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: Row(
+            children: [
+              SvgPicture.asset(model.image, height: 30),
+              SizedBox(width: 60),
+              Text(model.text, style: AppStyles.medium18),
+            ],
+          ),
         ),
       ),
     );

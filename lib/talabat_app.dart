@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:talabat_app/core/utils/styles/app_colors.dart';
 
 import 'core/utils/routes/app_routes.dart';
 
@@ -11,6 +12,7 @@ class TalabatApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: AppRoutes.router,
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.white),
     );
   }
 }
