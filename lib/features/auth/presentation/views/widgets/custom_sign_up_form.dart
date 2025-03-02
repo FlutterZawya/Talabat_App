@@ -87,7 +87,7 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
             CustomButton(
               text: 'Create your account',
               onPressed: () {
-                if (loginFormKey.currentState!.validate()) {
+                if (loginFormKey.currentState!.validate() && checkBox == true) {
                   FocusScope.of(context).unfocus();
                   emailController.clear();
                   passwordController.clear();
