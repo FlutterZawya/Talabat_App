@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 
 customAuthAppBar(
@@ -8,16 +9,19 @@ customAuthAppBar(
   bool showBackButton = true,
 }) {
   return AppBar(
-    title: Text(title ?? '', style: AppStyles.bold20),
-    centerTitle: true,
-    leading: showBackButton
-        ? IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              size: 26,
-            ),
-            onPressed: () => Navigator.pop(context),
-          )
-        : null,
-  );
+      title: Text(title ?? '', style: AppStyles.bold20),
+      centerTitle: true,
+      leading: showBackButton
+          ? IconButton(
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                size: 26,
+              ),
+              onPressed: () => Navigator.pop(context),
+            )
+          : null,
+      backgroundColor: AppColors.white,
+      flexibleSpace: Container(
+        decoration: const BoxDecoration(color: AppColors.white),
+      ));
 }
