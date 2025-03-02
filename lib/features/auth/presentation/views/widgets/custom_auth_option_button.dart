@@ -7,7 +7,7 @@ import 'package:talabat_app/core/utils/styles/app_colors.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
 
 class CustomAuthOptionButton extends StatelessWidget {
-  final Function onpressed;
+  final Function() onpressed;
   final AuthOptionType type;
   const CustomAuthOptionButton({
     super.key,
@@ -21,7 +21,7 @@ class CustomAuthOptionButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: TextButton(
-        onPressed: () {},
+        onPressed: onpressed,
         style: TextButton.styleFrom(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
