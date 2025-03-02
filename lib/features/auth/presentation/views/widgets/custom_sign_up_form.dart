@@ -1,7 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:talabat_app/core/utils/functions/text_form_validation.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
+import 'package:talabat_app/core/utils/widgets/custom_button.dart';
 import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_email_text_form.dart';
@@ -26,56 +29,75 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
   Widget build(BuildContext context) {
     return Form(
         key: loginFormKey,
-        child: Column(
-          children: [
-            CustomTextFormField(
-              hintText: 'First name',
-              controller: firstNameController,
-              validator: (name) {
-                return validateUsername(name);
-              },
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            CustomTextFormField(
-              hintText: 'Last name',
-              controller: lastNameController,
-              validator: (name) {
-                return validateUsername(name);
-              },
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            CustomEmailTextFormField(emailController: emailController),
-            SizedBox(
-              height: 20,
-            ),
-            CustomPasswordTextFormField(
-                passwordController: passwordController,
-                obscure: obscure,
-                onPressed: () {
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              CustomTextFormField(
+                hintText: 'First name',
+                controller: firstNameController,
+                validator: (name) {
+                  return validateUsername(name);
+                },
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              CustomTextFormField(
+                hintText: 'Last name',
+                controller: lastNameController,
+                validator: (name) {
+                  return validateUsername(name);
+                },
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              CustomEmailTextFormField(emailController: emailController),
+              SizedBox(
+                height: 20,
+              ),
+              CustomPasswordTextFormField(
+                  passwordController: passwordController,
+                  obscure: obscure,
+                  onPressed: () {
+                    setState(() {
+                      obscure = !obscure;
+                    });
+                  }),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                'Passwords should be between 6 and 16 characters',
+                style: AppStyles.medium12,
+              ),
+              CustomCheckBox(
+                value: checkBox,
+                onChanged: (value) {
                   setState(() {
-                    obscure = !obscure;
+                    checkBox = value;
                   });
-                }),
-            SizedBox(
-              height: 5,
-            ),
-            Text(
-              'Passwords should be between 6 and 16 characters',
-              style: AppStyles.medium12,
-            ),
-           CustomCheckBox(value: checkBox,onChanged: (value){
-             setState(() {
-                checkBox = value;
-              });
-             },),
-           
-          ],
+                },
+              ),
+              CustomButton(
+                text: 'Create your account',
+                onPressed: () {
+                  if (loginFormKey.currentState!.validate()) {
+                    FocusScope.of(context).unfocus();
+                    emailController.clear();
+                    passwordController.clear();
+                    lastNameController.clear();
+                    firstNameController.clear();
+                    log("success");
+                  } else {
+                    log("not");
+                  }
+                },
+              ),
+            ],
+          ),
         ));
   }
 }
-
-
