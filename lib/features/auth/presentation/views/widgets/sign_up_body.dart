@@ -7,20 +7,24 @@ class SignUpBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SizedBox(
-          height: 10,
-        ),
-        Text(
-          'Create your account',
-          style: AppStyles.bold20,
-        ),
-        SizedBox(
-          height: 20,
-        ),
-        CustomSignUpForm(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            height: 30,
+          ),
+          Text(
+            'Create your account',
+            style: AppStyles.bold20,
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          CustomSignUpForm(),
+        ],
+      ),
     );
   }
 }
