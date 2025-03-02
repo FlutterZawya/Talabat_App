@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:talabat_app/core/utils/functions/text_form_validation.dart';
+import 'package:talabat_app/core/utils/styles/app_colors.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
 import 'package:talabat_app/core/utils/widgets/custom_button.dart';
 import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
@@ -66,10 +67,8 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
             SizedBox(
               height: 5,
             ),
-            Text(
-              'Passwords should be between 8 and 16 characters',
-              style: AppStyles.medium12,
-            ),
+            Text('Passwords should be between 8 and 16 characters',
+                style: AppStyles.medium12.copyWith(color: AppColors.grey500)),
             SizedBox(
               height: 30,
             ),

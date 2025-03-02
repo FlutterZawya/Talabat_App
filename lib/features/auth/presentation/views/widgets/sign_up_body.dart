@@ -27,7 +27,7 @@ class SignUpBody extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          TermsAndPrivcyText()
+          TermsAndPrivcyText(),
         ],
       ),
     );
