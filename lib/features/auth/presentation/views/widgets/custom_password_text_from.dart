@@ -8,17 +8,16 @@ class CustomPasswordTextFormField extends StatelessWidget {
     required this.passwordController,
     required this.obscure,
     required this.onPressed,
-    required this.text,
   });
 
   final TextEditingController passwordController;
   final bool obscure;
   final void Function() onPressed;
-  final String text;
+
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
-      hintText: text,
+      hintText: 'Password',
       controller: passwordController,
       obscureText: obscure,
       suffix: IconButton(
