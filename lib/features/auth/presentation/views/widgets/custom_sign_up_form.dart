@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:talabat_app/core/utils/functions/text_form_validation.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
 import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
+import 'package:talabat_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_email_text_form.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_password_text_from.dart';
 
@@ -66,14 +67,15 @@ class _CustomSignUpFormState extends State<CustomSignUpForm> {
               'Passwords should be between 6 and 16 characters',
               style: AppStyles.medium12,
             ),
-            Checkbox(
-                value: checkBox,
-                onChanged: (value) {
-                  checkBox = value;
-                  setState(() {});
-                }),
-                
+           CustomCheckBox(value: checkBox,onChanged: (value){
+             setState(() {
+                checkBox = value;
+              });
+             },),
+           
           ],
         ));
   }
 }
+
+
