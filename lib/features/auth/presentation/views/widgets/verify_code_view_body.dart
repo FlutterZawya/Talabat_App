@@ -29,7 +29,7 @@ class VerifyCodeViewBody extends StatelessWidget {
             },
             onTapProceed: () {
               log('code');
-              GoRouter.of(context).push(AppRoutes.resetPasswordView);
+              GoRouter.of(context).pushReplacement(AppRoutes.resetPasswordView);
             },
           ),
         ],

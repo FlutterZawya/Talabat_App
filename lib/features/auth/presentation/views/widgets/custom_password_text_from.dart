@@ -5,8 +5,9 @@ import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
 class CustomPasswordTextFormField extends StatefulWidget {
   const CustomPasswordTextFormField({
     super.key,
+    this.labelText,
   });
-
+  final String? labelText;
   @override
   State<CustomPasswordTextFormField> createState() =>
       _CustomPasswordTextFormFieldState();
@@ -20,7 +21,7 @@ class _CustomPasswordTextFormFieldState
   @override
   Widget build(BuildContext context) {
     return CustomTextFormField(
-      labelText: 'Password',
+      labelText:widget.labelText ?? 'Password',
       obscureText: obscure,
       controller: passwordController,
       suffix: IconButton(
