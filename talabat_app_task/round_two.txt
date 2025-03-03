@@ -6,14 +6,14 @@
 		===========
 ==================================================================
 #ziad:
-=> login with page
-=> the old task
+=> login with page [Done]
+=> the old task [Done]
 ------------------------------------------------------------------
 #mahmoud:
 => create custom auth appbar [Done]
-=> forget password page
-=> login page
+=> forget password page [Done]
+=> login page [Done]
 ------------------------------------------------------------------
 #youssef:
-=> [the old Tasks]
-=> sign up page
+=> [the old Tasks] [Done]
+=> sign up page [Done]
