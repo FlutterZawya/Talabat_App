@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talabat_app/core/utils/functions/text_form_validation.dart';
-import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
 
+import '../../../../../core/utils/functions/text_form_validation.dart';
+import '../../../../../core/utils/widgets/custom_text_form_field.dart';
 class CustomEmailTextFormField extends StatelessWidget {
   const CustomEmailTextFormField({
     super.key,

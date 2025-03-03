@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:talabat_app/core/enum/auth_option_type.dart';
-import 'package:talabat_app/core/models/auth_option_data.dart';
+
+import '../../../../../core/enum/auth_option_type.dart';
+import '../../../../../core/models/auth_option_data.dart';
 import '../../../../../core/utils/functions/auth_option_type_method.dart';
-import 'package:talabat_app/core/utils/styles/app_colors.dart';
-import 'package:talabat_app/core/utils/styles/app_styles.dart';
+import '../../../../../core/utils/styles/app_colors.dart';
+import '../../../../../core/utils/styles/app_styles.dart';
 
 class CustomAuthOptionButton extends StatelessWidget {
   final Function() onpressed;

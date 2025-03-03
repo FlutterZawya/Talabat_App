@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:talabat_app/core/enum/auth_option_type.dart';
-import 'package:talabat_app/core/utils/routes/app_routes.dart';
-import 'package:talabat_app/core/utils/styles/app_images.dart';
-import 'package:talabat_app/core/utils/styles/app_styles.dart';
+
+import '../../../../../core/enum/auth_option_type.dart';
+import '../../../../../core/utils/routes/app_routes.dart';
+import '../../../../../core/utils/styles/app_images.dart';
+import '../../../../../core/utils/styles/app_styles.dart';
 import 'custom_auth_option_button.dart';
 
 class AuthOptionViewBody extends StatelessWidget {

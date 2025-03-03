@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talabat_app/core/utils/styles/app_colors.dart';
-import 'package:talabat_app/core/utils/styles/app_styles.dart';
 
+import '../styles/app_colors.dart';
+import '../styles/app_styles.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
