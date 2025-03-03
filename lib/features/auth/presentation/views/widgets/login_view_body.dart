@@ -4,6 +4,7 @@ import 'package:talabat_app/core/utils/widgets/custom_text_button.dart';
 
 import '../../../../../core/utils/routes/app_routes.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
+import 'login_form.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -14,8 +15,14 @@ class LoginViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          Text('Continue with email', style: AppStyles.bold20),
+          SizedBox(height: 10),
+          SizedBox(
+            width: double.infinity,
+            child: Text('Continue with email', style: AppStyles.bold20),
+          ),
           SizedBox(height: 20),
+          LoginForm(),
+          SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
