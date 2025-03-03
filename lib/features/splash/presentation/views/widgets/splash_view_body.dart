@@ -21,7 +21,7 @@ class _SplashViewBodyState extends State<SplashViewBody> {
     Timer(
       Duration(seconds: 5),
       () {
-        GoRouter.of(context).pushReplacement(AppRoutes.signUpView);
+        GoRouter.of(context).pushReplacement(AppRoutes.authOptionView);
       },
     );
   }
