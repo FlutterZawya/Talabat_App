@@ -10,6 +10,7 @@ import '../../../features/splash/presentation/views/splash_view.dart';
 import '../../../features/auth/presentation/views/complete_view.dart';
 
 abstract class AppRoutes {
+  static const String splashView = '/';
   static const String authOptionView = '/authOptionView';
   static const String loginView = '/loginView';
   static const String signUpView = '/signUpView';
@@ -21,7 +22,7 @@ abstract class AppRoutes {
   static final router = GoRouter(
     routes: [
       GoRoute(
-        path: '/',
+        path: splashView,
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(

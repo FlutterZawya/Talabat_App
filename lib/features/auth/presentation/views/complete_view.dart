@@ -20,7 +20,7 @@ class _CompleteViewState extends State<CompleteView> {
   initState() {
     super.initState();
     timer = Timer.periodic(Duration(seconds: 2), (_) {
-      GoRouter.of(context).pushReplacement(AppRoutes.authOptionView);
+      GoRouter.of(context).go(AppRoutes.authOptionView);
     });
   }
 
