@@ -12,7 +12,7 @@ class VerifyEmailViewBody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: const Column(
         children: [
-          SizedBox(height: 10),
+          SizedBox(height: 30),
           SizedBox(
             width: double.infinity,
             child: Text('Enter your email', style: AppStyles.bold20),
