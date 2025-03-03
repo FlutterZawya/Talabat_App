@@ -5,10 +5,10 @@ import 'package:talabat_app/core/utils/widgets/custom_text_form_field.dart';
 class CustomEmailTextFormField extends StatelessWidget {
   const CustomEmailTextFormField({
     super.key,
-    required this.emailController,
+    this.emailController,
   });
 
-  final TextEditingController emailController;
+  final TextEditingController? emailController;
 
   @override
   Widget build(BuildContext context) {

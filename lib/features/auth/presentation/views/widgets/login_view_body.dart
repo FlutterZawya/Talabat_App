@@ -21,13 +21,13 @@ class LoginViewBody extends StatelessWidget {
             children: [
               CustomTextButton(
                 text: 'Forgot password?',
-                onTap: () {
+                onPressed: () {
                   GoRouter.of(context).push(AppRoutes.verifyEmailView);
                 },
               ),
               CustomTextButton(
                 text: 'Create an account',
-                onTap: () {
+                onPressed: () {
                   GoRouter.of(context).push(AppRoutes.signUpView);
                 },
               ),
