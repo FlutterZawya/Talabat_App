@@ -1,7 +1,9 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../core/utils/routes/app_routes.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import 'verify_code_form.dart';
 
@@ -27,6 +29,7 @@ class VerifyCodeViewBody extends StatelessWidget {
             },
             onTapProceed: () {
               log('code');
+              GoRouter.of(context).push(AppRoutes.resetPasswordView);
             },
           ),
         ],
