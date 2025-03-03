@@ -7,6 +7,7 @@ import '../../../features/auth/presentation/views/sign_up_view.dart';
 import '../../../features/auth/presentation/views/verify_code_view.dart';
 import '../../../features/auth/presentation/views/verify_email_view.dart';
 import '../../../features/splash/presentation/views/splash_view.dart';
+import '../../../features/auth/presentation/views/complete_view.dart';
 
 abstract class AppRoutes {
   static const String authOptionView = '/authOptionView';
@@ -15,6 +16,7 @@ abstract class AppRoutes {
   static const String verifyEmailView = '/verifyEmailView';
   static const String verifyCodeView = '/verifyCodeView';
   static const String resetPasswordView = '/resetPasswordView';
+  static const String completeView = '/completeView';
 
   static final router = GoRouter(
     routes: [
@@ -45,6 +47,10 @@ abstract class AppRoutes {
       GoRoute(
         path: resetPasswordView,
         builder: (context, state) => const ResetPasswordView(),
+      ),
+      GoRoute(
+        path: completeView,
+        builder: (context, state) => const CompleteView(),
       ),
     ],
   );
