@@ -1,14 +1,16 @@
 import 'package:go_router/go_router.dart';
-import 'package:talabat_app/features/auth/presentation/views/sign_up_view.dart';
 
 import '../../../features/auth/presentation/views/auth_option_view.dart';
 import '../../../features/auth/presentation/views/login_view.dart';
+import '../../../features/auth/presentation/views/sign_up_view.dart';
+import '../../../features/auth/presentation/views/verify_email_view.dart';
 import '../../../features/splash/presentation/views/splash_view.dart';
 
 abstract class AppRoutes {
   static const String authOptionView = '/authOptionView';
   static const String loginView = '/loginView';
   static const String signUpView = '/signUpView';
+  static const String verifyEmailView = '/verifyEmailView';
 
   static final router = GoRouter(
     routes: [
@@ -27,6 +29,10 @@ abstract class AppRoutes {
       GoRoute(
         path: signUpView,
         builder: (context, state) => const SignUpView(),
+      ),
+      GoRoute(
+        path: verifyEmailView,
+        builder: (context, state) => const VerifyEmailView(),
       ),
     ],
   );
