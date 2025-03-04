@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
+import 'core/utils/styles/app_colors.dart';
 import 'core/utils/styles/app_images.dart';
 import 'core/utils/styles/app_styles.dart';
 
 PersistentTabController _controller = PersistentTabController();
 
-class TalabatAppBottomNavBar extends StatelessWidget {
-  const TalabatAppBottomNavBar({super.key});
+class TalabatAppBottomNavBarView extends StatelessWidget {
+  const TalabatAppBottomNavBarView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +18,9 @@ class TalabatAppBottomNavBar extends StatelessWidget {
       controller: _controller,
       screens: _buildScreens(),
       items: _buildItems(context),
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.white,
       decoration: navBarDecorationMethod(),
-      navBarStyle: NavBarStyle.style9,
+      navBarStyle: NavBarStyle.style7,
     );
   }
 
@@ -30,9 +31,9 @@ class TalabatAppBottomNavBar extends StatelessWidget {
 
 List<Widget> _buildScreens() {
   return const [
-    SizedBox(),
-    SizedBox(),
-    SizedBox(),
+    SizedBox(), //Home
+    SizedBox(), //Search
+    SizedBox(), //Account
   ];
 }
 
@@ -40,24 +41,36 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
   return [
     PersistentBottomNavBarItem(
       title: "Home",
-      textStyle: AppStyles.bold12,
+      activeColorPrimary: AppColors.inactiveButton,
+      activeColorSecondary: AppColors.main,
+      textStyle: AppStyles.bold14,
       icon: SvgPicture.asset(
         AppImages.imagesActiveTalabatIcon,
+      ),
+      inactiveIcon: SvgPicture.asset(
+        AppImages.imagesInactiveTalabatIcon,
       ),
     ),
     PersistentBottomNavBarItem(
       title: 'Search',
-      textStyle: AppStyles.bold12,
+      activeColorPrimary: AppColors.inactiveButton,
+      activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(
         AppImages.imagesActiveSearchIcon,
+      ),
+      inactiveIcon: SvgPicture.asset(
+        AppImages.imagesInactiveSearchIcon,
       ),
     ),
     PersistentBottomNavBarItem(
       title: 'Account',
-      textStyle: AppStyles.bold12,
+      activeColorPrimary: AppColors.inactiveButton,
+      activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(
         AppImages.imagesActiveAccountIcon,
-        color: Color(0xff63B4FF),
+      ),
+      inactiveIcon: SvgPicture.asset(
+        AppImages.imagesInactiveAccountIcon,
       ),
     ),
   ];
