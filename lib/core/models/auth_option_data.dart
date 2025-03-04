@@ -1,4 +1,5 @@
-import 'package:talabat_app/core/utils/styles/app_images.dart';
+
+import '../utils/styles/app_images.dart';
 
 class AuthOptionData {
   final String text;
