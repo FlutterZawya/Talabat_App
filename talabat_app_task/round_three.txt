@@ -1,19 +1,16 @@
 ===================			==============
-====talabat app====			Round 2 =Done=
+====talabat app====			Round 2 =    =
 =================== 		==============
 		===========
-		===Tasks===-===> Deadline: sunday,2/3 at 10:00 pm
+		===Tasks===-===> Deadline: 
 		===========
 ==================================================================
 #ziad:
-=> login with page [Done]
-=> the old task [Done]
+=> home view
 ------------------------------------------------------------------
 #mahmoud:
-=> create custom auth appbar [Done]
-=> forget password page [Done]
-=> login page [Done]
+=> search view
+=> bottom nav bar
 ------------------------------------------------------------------
 #youssef:
-=> [the old Tasks] [Done]
-=> sign up page [Done]
+=> profile view
