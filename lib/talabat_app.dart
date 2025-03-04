@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talabat_app/core/utils/styles/app_colors.dart';
 
 import 'core/utils/routes/app_routes.dart';
+import 'core/utils/styles/app_colors.dart';
 
 class TalabatApp extends StatelessWidget {
   const TalabatApp({super.key});

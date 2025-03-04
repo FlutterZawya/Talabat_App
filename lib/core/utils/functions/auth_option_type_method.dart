@@ -1,5 +1,5 @@
-import 'package:talabat_app/core/enum/auth_option_type.dart';
-import 'package:talabat_app/core/models/auth_option_data.dart';
+import '../../enum/auth_option_type.dart';
+import '../../models/auth_option_data.dart';
 
 AuthOptionData authOptionTypeMethod(AuthOptionType type) {
   switch (type) {
