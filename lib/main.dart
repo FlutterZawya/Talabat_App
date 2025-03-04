@@ -6,7 +6,7 @@ import 'talabat_app.dart';
 void main() {
   runApp(
     DevicePreview(
-      enabled: false,
+      // enabled: false,
       builder: (context) => const TalabatApp(),
     ),
   );
