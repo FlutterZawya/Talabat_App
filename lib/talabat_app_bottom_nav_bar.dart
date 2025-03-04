@@ -17,10 +17,12 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
       context,
       controller: _controller,
       screens: _buildScreens(),
+      navBarHeight: 60,
+      isVisible: true,
       items: _buildItems(context),
-      backgroundColor: AppColors.white,
+      backgroundColor: AppColors.grey100,
       decoration: navBarDecorationMethod(),
-      navBarStyle: NavBarStyle.style7,
+      navBarStyle: NavBarStyle.style6, // (6 | 7 | 8 | 14) the best style
     );
   }
 
