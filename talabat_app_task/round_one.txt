@@ -11,7 +11,7 @@
 => splash_view { } [Done]
 => custom_auth_option_button.dart (Enum) [Done]
 => app_router.dart [Done]
-------------------------------------------------------------------
+-----------------------------------------------------------------
 #mahmoud:
 => app_styles.dart {2} [Done]
 => app_icons {4} [Done]
