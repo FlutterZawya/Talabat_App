@@ -10,24 +10,21 @@ class CustomSearchTextField extends StatelessWidget {
   final String hintText;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: TextField(
-        style: AppStyles.medium18,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10),
-            borderSide: BorderSide(color: AppColors.main),
-          ),
-          hintText: hintText,
-          hintStyle: AppStyles.regular14,
-          prefixIcon: Icon(Icons.search),
+    return TextField(
+      style: AppStyles.medium18,
+      decoration: InputDecoration(
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
         ),
-        onChanged: onChanged,
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: AppColors.main),
+        ),
+        hintText: hintText,
+        hintStyle: AppStyles.regular14,
+        prefixIcon: Icon(Icons.search),
       ),
+      onChanged: onChanged,
     );
   }
 }
