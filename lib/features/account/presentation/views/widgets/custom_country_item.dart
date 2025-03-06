@@ -7,10 +7,11 @@ class CustomCountryItem extends StatelessWidget {
   const CustomCountryItem({
     super.key,
     required this.country,
+    this.index,
   });
 
   final Country country;
-
+  final int? index;
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -22,15 +23,17 @@ class CustomCountryItem extends StatelessWidget {
         country.name,
         style: AppStyles.medium14.copyWith(color: AppColors.black),
       ),
-      trailing: CircleAvatar(
-        radius: 15,
-        backgroundColor: AppColors.main,
-        child: Icon(
-          Icons.check,
-          color: Colors.white,
-          size: 12,
-        ),
-      ),
+      trailing: index == 6
+          ? CircleAvatar(
+              radius: 15,
+              backgroundColor: AppColors.main,
+              child: Icon(
+                Icons.check,
+                color: Colors.white,
+                size: 12,
+              ),
+            )
+          : null,
     );
   }
 }

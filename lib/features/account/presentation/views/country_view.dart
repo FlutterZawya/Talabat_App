@@ -1,8 +1,10 @@
+import 'package:country_picker/src/country.dart';
 import 'package:flutter/material.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_auth_app_bar.dart';
 
 import '../../../../core/utils/functions/get_country.dart';
-import 'widgets/custom_country_item.dart';
+import 'widgets/country_view_body.dart';
+
 
 class CountryView extends StatelessWidget {
   const CountryView({super.key});
@@ -12,18 +14,8 @@ class CountryView extends StatelessWidget {
     final countries = getCountry();
     return Scaffold(
       appBar: customAuthAppBar(context, title: 'Where will we deliver to?'),
-      body: Column(
-        children: List.generate(countries.length, (index) {
-          return Column(
-            children: [
-              Divider(),
-              CustomCountryItem(
-                country: countries[index],
-              ),
-            ],
-          );
-        }),
-      ),
+      body: CountryViewBody(countries: countries),
     );
   }
 }
+
