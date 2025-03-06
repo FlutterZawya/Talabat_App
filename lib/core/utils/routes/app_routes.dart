@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:talabat_app/features/account/presentation/views/account_settings_view.dart';
 
 import '../../../features/auth/presentation/views/auth_option_view.dart';
 import '../../../features/auth/presentation/views/complete_view.dart';
@@ -20,8 +21,10 @@ abstract class AppRoutes {
   static const String verifyCodeView = '/verifyCodeView';
   static const String resetPasswordView = '/resetPasswordView';
   static const String completeView = '/completeView';
-  static const String talabatAppBottomNavBarView = '/talabatAppBottomNavBarView';
-  
+  static const String talabatAppBottomNavBarView =
+      '/talabatAppBottomNavBarView';
+  static const String accountSettings = '/accountSettings';
+
   static const String homeView = '/homeView';
 
   static final router = GoRouter(
@@ -65,6 +68,10 @@ abstract class AppRoutes {
       GoRoute(
         path: talabatAppBottomNavBarView,
         builder: (context, state) => const TalabatAppBottomNavBarView(),
+      ),
+      GoRoute(
+        path: accountSettings,
+        builder: (context, state) => const AccountSettingsView(),
       ),
     ],
   );

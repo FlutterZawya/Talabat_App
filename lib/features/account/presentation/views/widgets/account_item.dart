@@ -17,7 +17,7 @@ class AccountItems extends StatelessWidget {
         SvgPicture.asset(
           image,
         ),
-        SizedBox(width: 8),
+        SizedBox(width: 16),
         Text(
           text,
           style: AppStyles.medium14,
