@@ -86,6 +86,7 @@ flutter_assets:
   assets_path:
     - assets/images/
     - assets/animations/
+    - assets/icons/
   output_path: lib/core/utils/styles
   filename: app_images.dart
   field_prefix: null

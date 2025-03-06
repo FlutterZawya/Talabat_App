@@ -1,5 +1,4 @@
 import 'package:flutter/widgets.dart';
-
 import 'account_item.dart';
 
 class AccountItemList extends StatelessWidget {
@@ -12,6 +11,7 @@ class AccountItemList extends StatelessWidget {
         shrinkWrap: true,
         itemCount: 6,
         itemBuilder: (context, index) {
+          
           return Padding(
             padding: const EdgeInsets.only(left: 16, bottom: 40),
             child: AccountItems(),

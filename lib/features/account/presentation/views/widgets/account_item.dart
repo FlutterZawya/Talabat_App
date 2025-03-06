@@ -10,7 +10,7 @@ class AccountItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(Icons.home),
+       
         SizedBox(width: 8),
         Text(
           'Your orders',
