@@ -21,7 +21,8 @@ List<Country> getCountry() {
 
 String getCountryFlag(String countryCode) {
   final country = CountryService().getAll().firstWhere(
-        (c) => c.countryCode.toUpperCase() == countryCode.toUpperCase(),
+        (country) =>
+            country.countryCode.toUpperCase() == countryCode.toUpperCase(),
       );
   return country.flagEmoji.isNotEmpty
       ? country.flagEmoji
