@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../../../core/utils/styles/app_colors.dart';
 import 'account_item_list.dart';
 import 'person_account_list_tile.dart';
 
@@ -17,8 +16,8 @@ class AccountViewBody extends StatelessWidget {
         ),
         PersonAccountListTile(),
         Divider(
-          thickness: 8,
-          color: AppColors.grey200,
+          thickness: 10,
+          color: Color(0xffF6F6F6),
         ),
         SizedBox(
           height: 30,
