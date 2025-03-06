@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import '../../../../../core/utils/functions/account_item_map.dart';
 import 'account_item.dart';
 
 class AccountItemList extends StatelessWidget {
@@ -11,10 +12,13 @@ class AccountItemList extends StatelessWidget {
         shrinkWrap: true,
         itemCount: 6,
         itemBuilder: (context, index) {
-          
+          Map<String, String> items = selectAccountItem();
           return Padding(
             padding: const EdgeInsets.only(left: 16, bottom: 40),
-            child: AccountItems(),
+            child: AccountItems(
+              text: items.values.elementAt(index),
+              image: items.keys.elementAt(index),
+            ),
           );
         });
   }
