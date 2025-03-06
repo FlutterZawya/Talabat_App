@@ -30,6 +30,9 @@ class AccountSettingItem extends StatelessWidget {
               text ?? '',
               style: AppStyles.medium12,
             ),
+            SizedBox(
+              width: 8,
+            ),
             Icon(
               Icons.arrow_forward_ios,
               color: AppColors.main,
