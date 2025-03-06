@@ -6,7 +6,7 @@ import '../../../../core/utils/styles/app_colors.dart';
 import '../../../../core/utils/styles/app_styles.dart';
 import 'flowers_view.dart';
 import 'food_view.dart';
-import 'grocries_view.dart';
+import 'groceries_view.dart';
 import 'health_view.dart';
 import 'more_shops_view.dart';
 import 'widgets/custom_search_text_field.dart';

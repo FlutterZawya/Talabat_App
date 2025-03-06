@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../data/content/empty_search_view_data.dart';
+import '../../data/enums/empty_search_type.dart';
 import 'widgets/custom_empty_search_view_body.dart';
 
 class HealthView extends StatelessWidget {
@@ -9,7 +9,7 @@ class HealthView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
-      viewModel: emptySearchViewData[2],
+      type: EmptySearchType.health,
     );
   }
 }

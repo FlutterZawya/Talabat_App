@@ -3,16 +3,19 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../../../core/utils/widgets/custom_button.dart';
+import '../../../data/content/empty_search_view_data.dart';
+import '../../../data/enums/empty_search_type.dart';
 import '../../../data/models/empty_search_view_model.dart';
 
 class CustomEmptySearchViewBody extends StatelessWidget {
   const CustomEmptySearchViewBody({
     super.key,
-    required this.viewModel,
+    required this.type,
   });
-  final EmptySearchViewModel viewModel;
+  final EmptySearchType type;
   @override
   Widget build(BuildContext context) {
+    EmptySearchViewModel viewModel = getEmptySearchData(type);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -42,5 +45,20 @@ class CustomEmptySearchViewBody extends StatelessWidget {
         SizedBox(height: 30),
       ],
     );
+  }
+}
+
+EmptySearchViewModel getEmptySearchData(EmptySearchType type) {
+  switch (type) {
+    case EmptySearchType.food:
+      return emptySearchViewData[0];
+    case EmptySearchType.groceries:
+      return emptySearchViewData[1];
+    case EmptySearchType.health:
+      return emptySearchViewData[2];
+    case EmptySearchType.flowers:
+      return emptySearchViewData[3];
+    case EmptySearchType.moreShops:
+      return emptySearchViewData[4];
   }
 }
