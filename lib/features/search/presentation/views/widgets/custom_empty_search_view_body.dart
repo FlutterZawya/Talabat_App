@@ -3,16 +3,18 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../../../core/utils/widgets/custom_button.dart';
-import '../../../data/content/empty_search_view_data.dart';
 import '../../../data/enums/empty_search_type.dart';
 import '../../../data/models/empty_search_view_model.dart';
+import '../../manager/functions/get_empty_search_data.dart';
 
 class CustomEmptySearchViewBody extends StatelessWidget {
   const CustomEmptySearchViewBody({
     super.key,
     required this.type,
+    this.onPressedOnSearch,
   });
   final EmptySearchType type;
+  final void Function()? onPressedOnSearch;
   @override
   Widget build(BuildContext context) {
     EmptySearchViewModel viewModel = getEmptySearchData(type);
@@ -35,7 +37,7 @@ class CustomEmptySearchViewBody extends StatelessWidget {
         SizedBox(height: 30),
         CustomButton(
           text: viewModel.buttonText,
-          onPressed: viewModel.onPressed,
+          onPressed: onPressedOnSearch,
           backgroundColor: AppColors.white,
           textColor: AppColors.main,
           borderRadius: 16,
@@ -45,20 +47,5 @@ class CustomEmptySearchViewBody extends StatelessWidget {
         SizedBox(height: 30),
       ],
     );
-  }
-}
-
-EmptySearchViewModel getEmptySearchData(EmptySearchType type) {
-  switch (type) {
-    case EmptySearchType.food:
-      return emptySearchViewData[0];
-    case EmptySearchType.groceries:
-      return emptySearchViewData[1];
-    case EmptySearchType.health:
-      return emptySearchViewData[2];
-    case EmptySearchType.flowers:
-      return emptySearchViewData[3];
-    case EmptySearchType.moreShops:
-      return emptySearchViewData[4];
   }
 }
