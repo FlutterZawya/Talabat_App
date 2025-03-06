@@ -1,7 +1,5 @@
-import 'package:country_picker/src/country.dart';
 import 'package:flutter/material.dart';
 import 'package:talabat_app/features/auth/presentation/views/widgets/custom_auth_app_bar.dart';
-
 import '../../../../core/utils/functions/get_country.dart';
 import 'widgets/country_view_body.dart';
 

@@ -18,3 +18,12 @@ List<Country> getCountry() {
       .map((country) => country)
       .toList();
 }
+
+String getCountryFlag(String countryCode) {
+  final country = CountryService().getAll().firstWhere(
+        (c) => c.countryCode.toUpperCase() == countryCode.toUpperCase(),
+      );
+  return country.flagEmoji.isNotEmpty
+      ? country.flagEmoji
+      : '🏳️'; // Default flag if not found
+}
