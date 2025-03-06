@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-
 import '../../../../../core/utils/styles/app_styles.dart';
 
 class AccountItems extends StatelessWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:talabat_app/core/utils/styles/app_colors.dart';
-import 'package:talabat_app/core/utils/styles/app_styles.dart';
+
+import '../../../../core/utils/styles/app_colors.dart';
+import 'widgets/account_item_list.dart';
 import 'widgets/person_account_list_tile.dart';
 
 class AccountView extends StatelessWidget {
@@ -17,14 +18,12 @@ class AccountView extends StatelessWidget {
         Divider(
           thickness: 8,
           color: AppColors.grey200,
-          height: 20,
         ),
         SizedBox(
-          height: 20,
+          height: 30,
         ),
-      
+        AccountItemList(),
       ],
     );
   }
 }
-
