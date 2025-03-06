@@ -7,39 +7,34 @@ List<EmptySearchViewModel> emptySearchViewData = [
     title: 'Find Food stores',
     subtitle: "Search for food stores near you",
     image: AppImages.imagesEmptySearchHealth,
-    buttonText:'Search food' ,
-    onPressed: () {},
+    buttonText: 'Search food',
   ),
   //Groceries
   EmptySearchViewModel(
     title: 'Shop for all daily essentials',
     subtitle: "From groceries and fresh products to householdsupplies.",
     image: AppImages.imagesEmptySearchGroceries,
-    buttonText:'Search groceries' ,
-    onPressed: () {},
+    buttonText: 'Search groceries',
   ),
   //Health
   EmptySearchViewModel(
     title: 'Find health & wellness stores',
     subtitle: "From groceries and fresh products to householdsupplies.",
     image: AppImages.imagesEmptySearchHealth,
-    buttonText:'Search health & wellness' ,
-    onPressed: () {},
+    buttonText: 'Search health & wellness',
   ),
   //Flowers
   EmptySearchViewModel(
     title: 'Find the perfect gift',
     subtitle: "Order beautiful flowers, bouquets, or plants forevery occasion.",
     image: AppImages.imagesEmptySearchFlowers,
-    buttonText:'Search flowers' ,
-    onPressed: () {},
+    buttonText: 'Search flowers',
   ),
   //More Shops
   EmptySearchViewModel(
     title: 'Explore far and wide',
     subtitle: "Search for a range of products at a variety of shops.",
     image: AppImages.imagesEmptySearchMoreShops,
-    buttonText:'Search flowers' ,
-    onPressed: () {},
+    buttonText: 'Search flowers',
   ),
 ];

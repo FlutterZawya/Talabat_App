@@ -10,6 +10,7 @@ class MoreShopsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
       type: EmptySearchType.moreShops,
+      onPressedOnSearch: () {},
     );
   }
 }

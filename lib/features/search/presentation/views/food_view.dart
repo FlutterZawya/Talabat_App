@@ -10,6 +10,7 @@ class FoodView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
       type: EmptySearchType.food,
+      onPressedOnSearch: () {},
     );
   }
 }

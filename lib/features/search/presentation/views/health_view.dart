@@ -10,6 +10,7 @@ class HealthView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
       type: EmptySearchType.health,
+      onPressedOnSearch: () {},
     );
   }
 }

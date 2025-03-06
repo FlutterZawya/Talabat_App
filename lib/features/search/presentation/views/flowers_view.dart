@@ -10,6 +10,7 @@ class FlowersView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
       type: EmptySearchType.flowers,
+      onPressedOnSearch: () {},
     );
   }
 }

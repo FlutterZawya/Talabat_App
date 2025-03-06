@@ -10,6 +10,7 @@ class GroceriesView extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomEmptySearchViewBody(
       type: EmptySearchType.groceries,
+      onPressedOnSearch: () {},
     );
   }
 }
