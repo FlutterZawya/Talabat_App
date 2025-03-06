@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/utils/styles/app_colors.dart';
 import '../../../../core/utils/styles/app_styles.dart';
+import 'flowers_view.dart';
+import 'food_view.dart';
+import 'grocries_view.dart';
+import 'health_view.dart';
+import 'more_shops_view.dart';
 import 'widgets/custom_search_text_field.dart';
 
 class SearchView extends StatefulWidget {
@@ -71,11 +76,11 @@ class _SearchViewState extends State<SearchView>
       body: TabBarView(
         controller: _tabController,
         children: [
-          SizedBox(), //FoodView(),
-          SizedBox(), //GroceriesView(),
-          SizedBox(), //HealthView(),
-          SizedBox(), //FlowersView(),
-          SizedBox(), //MoreShopsView(),
+          FoodView(), //FoodView(),
+          GroceriesView(), //GroceriesView(),
+          HealthView(), //HealthView(),
+          FlowersView(), //FlowersView(),
+          MoreShopsView(), //MoreShopsView(),
         ],
       ),
     );
