@@ -17,23 +17,26 @@ class AccountSettingItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Row(
-        children: [
-          Text(
-            title,
-            style: AppStyles.medium12.copyWith(color: AppColors.black),
-          ),
-          Spacer(),
-          Text(
-            text ?? '',
-            style: AppStyles.medium12,
-          ),
-          Icon(
-            Icons.arrow_forward_ios,
-            color: AppColors.main,
-            size: 20,
-          )
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Row(
+          children: [
+            Text(
+              title,
+              style: AppStyles.medium12.copyWith(color: AppColors.black),
+            ),
+            Spacer(),
+            Text(
+              text ?? '',
+              style: AppStyles.medium12,
+            ),
+            Icon(
+              Icons.arrow_forward_ios,
+              color: AppColors.main,
+              size: 20,
+            )
+          ],
+        ),
       ),
     );
   }
