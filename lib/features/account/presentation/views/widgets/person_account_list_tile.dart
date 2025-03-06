@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:talabat_app/core/utils/routes/app_routes.dart';
 
 import '../../../../../core/utils/styles/app_styles.dart';
-
 
 class PersonAccountListTile extends StatelessWidget {
   const PersonAccountListTile({
@@ -26,7 +27,12 @@ class PersonAccountListTile extends StatelessWidget {
           style: AppStyles.regular16,
         ),
       ),
-      trailing: Icon(Icons.settings_sharp),
+      trailing: IconButton(
+        onPressed: () {
+          GoRouter.of(context).push(AppRoutes.accountSettings);
+        },
+        icon: Icon(Icons.settings_sharp),
+      ),
     );
   }
 }
