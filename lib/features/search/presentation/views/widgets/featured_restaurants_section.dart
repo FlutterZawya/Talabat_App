@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'featured_restaurants_list_view.dart';
 import 'search_sections_title.dart';
 
 class FeaturedRestaurantsSection extends StatelessWidget {
@@ -14,6 +15,7 @@ class FeaturedRestaurantsSection extends StatelessWidget {
           SizedBox(height: 5),
           const SearchSectionsTitle(title: 'Featured Restaurants'),
           SizedBox(height: 8),
+          FeaturedRestaurantsListView(),
         ],
       ),
     );

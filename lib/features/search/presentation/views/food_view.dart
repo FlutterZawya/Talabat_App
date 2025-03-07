@@ -14,11 +14,13 @@ class FoodView extends StatelessWidget {
     // );
     //////////////
     return Center(
-      child: Column(
-        children: [
-          PopularSearchSection(),
-          FeaturedRestaurantsSection(),
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            PopularSearchSection(),
+            FeaturedRestaurantsSection(),
+          ],
+        ),
       ),
     );
   }
