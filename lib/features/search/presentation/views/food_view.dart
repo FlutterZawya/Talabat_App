@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/utils/widgets/custom_restaurant_card.dart';
+import 'widgets/featured_restaurants_section.dart';
 import 'widgets/popular_search_section.dart';
 
 class FoodView extends StatelessWidget {
@@ -17,7 +17,7 @@ class FoodView extends StatelessWidget {
       child: Column(
         children: [
           PopularSearchSection(),
-          CustomRestaurantCard(),
+          FeaturedRestaurantsSection(),
         ],
       ),
     );

@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles/app_styles.dart';
 
-class PopularSearchTitle extends StatelessWidget {
-  const PopularSearchTitle({
+class SearchSectionsTitle extends StatelessWidget {
+  const SearchSectionsTitle({
     super.key,
+    required this.title,
   });
-
+final String title;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
-      child: Text('Popular searches', style: AppStyles.bold18),
+      child: Text(title, style: AppStyles.bold18),
     );
   }
 }

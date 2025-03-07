@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles/app_colors.dart';
 import 'popular_search_grid_view.dart';
-import 'popular_search_title.dart';
+import 'search_sections_title.dart';
 
 class PopularSearchSection extends StatelessWidget {
   const PopularSearchSection({super.key});
@@ -16,7 +16,7 @@ class PopularSearchSection extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(height: 12),
-              PopularSearchTitle(),
+              SearchSectionsTitle(title: 'Popular searches'),
               SizedBox(height: 12),
               PopularSearchGridView(),
             ],
