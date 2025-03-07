@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/styles/app_colors.dart';
-import '../../../../../core/utils/styles/app_images.dart';
+import '../styles/app_colors.dart';
+import '../styles/app_images.dart';
 
-class SearchResaultImage extends StatelessWidget {
-  const SearchResaultImage({
+class CustomRestaurantImage extends StatelessWidget {
+  const CustomRestaurantImage({
     super.key,
   });
 
