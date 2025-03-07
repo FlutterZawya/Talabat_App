@@ -12,21 +12,21 @@ List<EmptySearchViewModel> emptySearchViewData = [
   //Groceries
   EmptySearchViewModel(
     title: 'Shop for all daily essentials',
-    subtitle: "From groceries and fresh products to householdsupplies.",
+    subtitle: "From groceries and fresh products to household supplies.",
     image: AppImages.imagesEmptySearchGroceries,
     buttonText: 'Search groceries',
   ),
   //Health
   EmptySearchViewModel(
     title: 'Find health & wellness stores',
-    subtitle: "From groceries and fresh products to householdsupplies.",
+    subtitle: "From groceries and fresh products to household supplies.",
     image: AppImages.imagesEmptySearchHealth,
     buttonText: 'Search health & wellness',
   ),
   //Flowers
   EmptySearchViewModel(
     title: 'Find the perfect gift',
-    subtitle: "Order beautiful flowers, bouquets, or plants forevery occasion.",
+    subtitle: "Order beautiful flowers, bouquets, or plants for every occasion.",
     image: AppImages.imagesEmptySearchFlowers,
     buttonText: 'Search flowers',
   ),
@@ -35,6 +35,6 @@ List<EmptySearchViewModel> emptySearchViewData = [
     title: 'Explore far and wide',
     subtitle: "Search for a range of products at a variety of shops.",
     image: AppImages.imagesEmptySearchMoreShops,
-    buttonText: 'Search flowers',
+    buttonText: 'Search more products',
   ),
 ];

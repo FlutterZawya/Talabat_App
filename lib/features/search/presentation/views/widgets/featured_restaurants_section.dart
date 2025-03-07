@@ -12,10 +12,11 @@ class FeaturedRestaurantsSection extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Column(
         children: [
-          SizedBox(height: 5),
+          SizedBox(height: 12),
           const SearchSectionsTitle(title: 'Featured Restaurants'),
-          SizedBox(height: 8),
+          SizedBox(height: 12),
           FeaturedRestaurantsListView(),
+          SizedBox(height: 12),
         ],
       ),
     );

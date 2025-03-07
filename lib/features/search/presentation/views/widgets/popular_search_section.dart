@@ -19,6 +19,7 @@ class PopularSearchSection extends StatelessWidget {
               SearchSectionsTitle(title: 'Popular searches'),
               SizedBox(height: 12),
               PopularSearchGridView(),
+              SizedBox(height: 12),
             ],
           ),
         ),

@@ -23,7 +23,7 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
       items: _buildItems(context),
       backgroundColor: AppColors.grey100,
       decoration: navBarDecorationMethod(),
-      navBarStyle: NavBarStyle.style6, // (6 | 7 | 8 | 14) the best style
+      navBarStyle: NavBarStyle.style14, // (6 | 7 | 8 | 14) the best style
     );
   }
 
@@ -44,6 +44,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
   return [
     PersistentBottomNavBarItem(
       title: "Home",
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       textStyle: AppStyles.bold14,
@@ -56,6 +57,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
     ),
     PersistentBottomNavBarItem(
       title: 'Search',
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(
@@ -67,6 +69,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
     ),
     PersistentBottomNavBarItem(
       title: 'Account',
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(

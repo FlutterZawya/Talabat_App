@@ -10,7 +10,7 @@ class FeaturedRestaurantsListView extends StatelessWidget {
     return ListView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: 4, // Replace with the actual number of featured restaurants
+      itemCount: 6, // Replace with the actual number of featured restaurants
       itemBuilder: (context, index) {
         return CustomRestaurantCard();
       },
