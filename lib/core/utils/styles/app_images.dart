@@ -56,6 +56,8 @@ class AppImages {
 
   static const String imagesPayCard = "assets/images/payCard.png";
 
+  static const String imagesPopularSearchIcon = "assets/images/popular_search_icon.svg";
+
   static const String imagesTalabat = "assets/images/talabat.png";
 
   static const String imagesTalabatMart = "assets/images/talabatMart.png";
