@@ -61,5 +61,9 @@ class AppImages {
   static const String imagesTalabat = "assets/images/talabat.png";
 
   static const String imagesTalabatMart = "assets/images/talabatMart.png";
+
+  static const String imagesTestSearchImage1 = "assets/images/test_search_image1.png";
+
+  static const String imagesTestSearchImage2 = "assets/images/test_search_image2.png";
 }
 
