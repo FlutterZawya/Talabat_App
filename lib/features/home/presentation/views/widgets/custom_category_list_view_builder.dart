@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:talabat_app/features/home/presentation/views/widgets/custom_restaurant_card.dart';
+import 'custom_restaurant_card.dart';
 import 'custom_shortcut_card.dart';
 import '../../../data/models/category_model.dart';
 import 'custom_category_view_card.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:talabat_app/features/home/presentation/views/widgets/custom_home_view_appbar.dart';
 import 'widgets/home_view_body.dart';
 
 class HomeView extends StatelessWidget {
@@ -7,7 +8,13 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: HomeViewBody(),
+      body: SingleChildScrollView(
+          child: Column(
+        children: [
+          CustomHomeViewAppBar(),
+          HomeViewBody(),
+        ],
+      )),
     );
   }
 }
