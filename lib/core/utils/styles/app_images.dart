@@ -22,6 +22,14 @@ class AppImages {
 
   static const String imagesEmail = "assets/images/email.svg";
 
+  static const String imagesEmptySearchFlowers = "assets/images/empty_search_flowers.png";
+
+  static const String imagesEmptySearchGroceries = "assets/images/empty_search_groceries.png";
+
+  static const String imagesEmptySearchHealth = "assets/images/empty_search_health.png";
+
+  static const String imagesEmptySearchMoreShops = "assets/images/empty_search_more_shops.png";
+
   static const String imagesExitIcon = "assets/images/exitIcon.png";
 
   static const String imagesFacebook = "assets/images/facebook.svg";
@@ -48,8 +56,14 @@ class AppImages {
 
   static const String imagesPayCard = "assets/images/payCard.png";
 
+  static const String imagesPopularSearchIcon = "assets/images/popular_search_icon.svg";
+
   static const String imagesTalabat = "assets/images/talabat.png";
 
   static const String imagesTalabatMart = "assets/images/talabatMart.png";
+
+  static const String imagesTestSearchImage1 = "assets/images/test_search_image1.png";
+
+  static const String imagesTestSearchImage2 = "assets/images/test_search_image2.png";
 }
 
