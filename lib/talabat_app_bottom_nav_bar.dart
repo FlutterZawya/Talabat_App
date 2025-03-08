@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:talabat_app/features/home/presentation/views/home_view.dart';
 
 import 'core/utils/styles/app_colors.dart';
 import 'core/utils/styles/app_images.dart';
@@ -35,9 +36,15 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
 
 List<Widget> _buildScreens() {
   return const [
+<<<<<<< home_view
+    HomeView(), //Home
+    SizedBox(), //Search
+    SizedBox(), //Account
+=======
     SizedBox(), //Home
     SearchView(), //Search
     AccountView(), //Account
+>>>>>>> main
   ];
 }
 
