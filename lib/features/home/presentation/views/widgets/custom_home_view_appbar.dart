@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_images.dart';
@@ -22,18 +21,14 @@ class CustomHomeViewAppBar extends StatelessWidget {
             onTap: () {},
             child: Row(
               children: [
-                Text(
-                  "Delivering to ...",
-                  style: AppStyles.medium16,
-                ),
+                Text("Delivering to ...", style: AppStyles.medium16),
                 Icon(Icons.keyboard_arrow_down_outlined),
               ],
             ),
           ),
-          Image.asset(AppImages.imagesTalabat)
+          Image.asset(AppImages.imagesTalabat),
         ],
       ),
     );
   }
 }
-

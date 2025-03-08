@@ -24,6 +24,7 @@ class HomeViewBody extends StatelessWidget {
           ),
           CustomSmoothPageIndicator(),
           SizedBox(height: 16),
+          // for page navigation
           CustomCategoryListViewBuilder(
             scrollDirection: Axis.horizontal,
             height: 170,
@@ -31,6 +32,7 @@ class HomeViewBody extends StatelessWidget {
             widgetName: 'view',
           ),
           SizedBox(height: 16),
+          // for product navigation
           CustomCategoryListViewBuilder(
             scrollDirection: Axis.horizontal,
             height: 170,
@@ -38,8 +40,10 @@ class HomeViewBody extends StatelessWidget {
             widgetName: 'view',
           ),
           SizedBox(height: 16),
+          // for code
           CustomGetCodeCard(),
           SizedBox(height: 26),
+          // shortcuts part
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Text('Shortcuts', style: AppStyles.bold24),
@@ -51,6 +55,7 @@ class HomeViewBody extends StatelessWidget {
             widgetName: 'short',
           ),
           SizedBox(height: 26),
+          // for nearby restaurants
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Text('Popular restaurants nearby', style: AppStyles.bold24),
