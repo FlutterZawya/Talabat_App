@@ -24,7 +24,7 @@ class HomeViewBody extends StatelessWidget {
           ),
           CustomSmoothPageIndicator(),
           SizedBox(height: 16),
-          // for page navigation
+          // for page navigation for views
           CustomCategoryListViewBuilder(
             scrollDirection: Axis.horizontal,
             height: 170,
