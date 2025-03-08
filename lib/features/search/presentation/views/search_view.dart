@@ -44,26 +44,22 @@ class _SearchViewState extends State<SearchView>
           hintText: 'Search food, groceries and more',
           onChanged: (value) {},
         ),
-        // toolbarHeight: 60,
+        toolbarHeight: 70,
         backgroundColor: AppColors.white,
         flexibleSpace: Container(color: AppColors.white),
-
         bottom: TabBar(
           controller: _tabController,
           indicatorColor: AppColors.main,
           labelStyle: AppStyles.bold14.copyWith(color: AppColors.main),
+          unselectedLabelStyle: AppStyles.bold14,
+          tabAlignment: TabAlignment.center,
           isScrollable: true,
-          indicatorPadding: EdgeInsets.zero,
+          labelPadding: EdgeInsets.symmetric(horizontal: 12),
           onTap: (value) {
             log(value.toString()); // value is the index of the tab
           },
-          labelPadding: EdgeInsets.only(right: 20, left: 0),
-          padding: EdgeInsets.zero,
           labelColor: AppColors.main,
           dividerColor: AppColors.grey400,
-          enableFeedback: false, //
-          tabAlignment: TabAlignment.startOffset,
-
           tabs: const [
             Tab(text: 'Food'),
             Tab(text: 'Groceries'),
@@ -76,11 +72,11 @@ class _SearchViewState extends State<SearchView>
       body: TabBarView(
         controller: _tabController,
         children: [
-          FoodView(), //FoodView(),
-          GroceriesView(), //GroceriesView(),
-          HealthView(), //HealthView(),
-          FlowersView(), //FlowersView(),
-          MoreShopsView(), //MoreShopsView(),
+          FoodView(),
+          GroceriesView(),
+          HealthView(),
+          FlowersView(),
+          MoreShopsView(),
         ],
       ),
     );
