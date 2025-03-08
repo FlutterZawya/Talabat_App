@@ -1,16 +1,15 @@
 ===================			==============
-====talabat app====			Round 3 =    =
+====talabat app====			Round 4 =    =
 =================== 		==============
 		===========
-		===Tasks===-===> Deadline: sunday 9/3
+		===Tasks===-===> Deadline: friday,14/3 at 10:00 pm
 		===========
 ==================================================================
 #ziad:
-=> home view
+=> complete home view
 ------------------------------------------------------------------
 #mahmoud:
-=> search view
-=> bottom nav bar [Done]
+=> performance evaluation
 ------------------------------------------------------------------
 #youssef:
-=> profile view
+=> orders view
