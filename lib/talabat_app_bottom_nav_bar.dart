@@ -5,6 +5,7 @@ import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'core/utils/styles/app_colors.dart';
 import 'core/utils/styles/app_images.dart';
 import 'core/utils/styles/app_styles.dart';
+import 'features/account/presentation/views/account_view.dart';
 import 'features/search/presentation/views/search_view.dart';
 
 PersistentTabController _controller = PersistentTabController();
@@ -36,7 +37,7 @@ List<Widget> _buildScreens() {
   return const [
     SizedBox(), //Home
     SearchView(), //Search
-    SizedBox(), //Account
+    AccountView(), //Account
   ];
 }
 
