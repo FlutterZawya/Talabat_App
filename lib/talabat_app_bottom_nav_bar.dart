@@ -6,6 +6,8 @@ import 'package:talabat_app/features/home/presentation/views/home_view.dart';
 import 'core/utils/styles/app_colors.dart';
 import 'core/utils/styles/app_images.dart';
 import 'core/utils/styles/app_styles.dart';
+import 'features/account/presentation/views/account_view.dart';
+import 'features/search/presentation/views/search_view.dart';
 
 PersistentTabController _controller = PersistentTabController();
 
@@ -23,7 +25,7 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
       items: _buildItems(context),
       backgroundColor: AppColors.grey100,
       decoration: navBarDecorationMethod(),
-      navBarStyle: NavBarStyle.style6, // (6 | 7 | 8 | 14) the best style
+      navBarStyle: NavBarStyle.style14, // (6 | 7 | 8 | 14) the best style
     );
   }
 
@@ -34,9 +36,15 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
 
 List<Widget> _buildScreens() {
   return const [
+<<<<<<< home_view
     HomeView(), //Home
     SizedBox(), //Search
     SizedBox(), //Account
+=======
+    SizedBox(), //Home
+    SearchView(), //Search
+    AccountView(), //Account
+>>>>>>> main
   ];
 }
 
@@ -44,6 +52,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
   return [
     PersistentBottomNavBarItem(
       title: "Home",
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       textStyle: AppStyles.bold14,
@@ -56,6 +65,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
     ),
     PersistentBottomNavBarItem(
       title: 'Search',
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(
@@ -67,6 +77,7 @@ List<PersistentBottomNavBarItem> _buildItems(BuildContext context) {
     ),
     PersistentBottomNavBarItem(
       title: 'Account',
+      contentPadding: 0,
       activeColorPrimary: AppColors.inactiveButton,
       activeColorSecondary: AppColors.main,
       icon: SvgPicture.asset(

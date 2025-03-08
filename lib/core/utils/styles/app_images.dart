@@ -36,6 +36,14 @@ class AppImages {
 
   static const String imagesEmail = "assets/images/email.svg";
 
+  static const String imagesEmptySearchFlowers = "assets/images/empty_search_flowers.png";
+
+  static const String imagesEmptySearchGroceries = "assets/images/empty_search_groceries.png";
+
+  static const String imagesEmptySearchHealth = "assets/images/empty_search_health.png";
+
+  static const String imagesEmptySearchMoreShops = "assets/images/empty_search_more_shops.png";
+
   static const String imagesExitIcon = "assets/images/exitIcon.png";
 
   static const String imagesFacebook = "assets/images/facebook.svg";
@@ -78,10 +86,6 @@ class AppImages {
   static const String imagesPastOrder = "assets/images/pastOrder.png";
 
   static const String imagesPayCard = "assets/images/payCard.png";
-
-  static const String imagesSliderImg = "assets/images/sliderImg.png";
-
-  static const String imagesSuperSaver = "assets/images/superSaver.png";
 
   static const String imagesTalabat = "assets/images/talabat.png";
 
