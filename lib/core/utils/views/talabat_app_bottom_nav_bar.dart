@@ -3,11 +3,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:talabat_app/features/home/presentation/views/home_view.dart';
 
-import 'core/utils/styles/app_colors.dart';
-import 'core/utils/styles/app_images.dart';
-import 'core/utils/styles/app_styles.dart';
-import 'features/account/presentation/views/account_view.dart';
-import 'features/search/presentation/views/search_view.dart';
+import '../styles/app_colors.dart';
+import '../styles/app_images.dart';
+import '../styles/app_styles.dart';
+import '../../../features/account/presentation/views/account_view.dart';
+import '../../../features/search/presentation/views/search_view.dart';
 
 PersistentTabController _controller = PersistentTabController();
 
