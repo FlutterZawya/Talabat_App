@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../styles/app_colors.dart';
@@ -50,9 +49,12 @@ class CustomRestaurantCardBody extends StatelessWidget {
                 size: 16,
               ),
               SizedBox(width: 3),
-              Text(
-                'Within 35 mins',
-                style: AppStyles.bold14,
+              Expanded(
+                child: Text(
+                  'Within 35 mins',
+                  overflow: TextOverflow.ellipsis,
+                  style: AppStyles.bold14,
+                ),
               ),
               SizedBox(width: 5),
               CircleAvatar(
@@ -66,9 +68,12 @@ class CustomRestaurantCardBody extends StatelessWidget {
                 size: 16,
               ),
               SizedBox(width: 3),
-              Text(
-                'AED 5.50',
-                style: AppStyles.bold14,
+              Expanded(
+                child: Text(
+                  'AED 5.50',
+                  style: AppStyles.bold14,
+                  overflow: TextOverflow.ellipsis,
+                ),
               ),
             ],
           ),
