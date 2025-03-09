@@ -20,6 +20,8 @@ class AppImages {
 
   static const String imagesActiveSearchIcon = "assets/images/active_search_icon.svg";
 
+  static const String imagesActiveStare = "assets/images/active_stare.svg";
+
   static const String imagesActiveTalabatIcon = "assets/images/active_talabat_icon.svg";
 
   static const String imagesAlloBeirut = "assets/images/alloBeirut.png";
@@ -78,6 +80,8 @@ class AppImages {
 
   static const String imagesInactiveSearchIcon = "assets/images/inactive_search_icon.svg";
 
+  static const String imagesInactiveStare = "assets/images/inactive_stare.svg";
+
   static const String imagesInactiveTalabatIcon = "assets/images/inactive_talabat_icon.svg";
 
   static const String imagesLaffah = "assets/images/laffah.png";
@@ -93,6 +97,8 @@ class AppImages {
   static const String imagesPayCard = "assets/images/payCard.png";
 
   static const String imagesPopularSearchIcon = "assets/images/popular_search_icon.svg";
+
+  static const String imagesRatingMotocycle = "assets/images/rating_motocycle.svg";
 
   static const String imagesSliderImg = "assets/images/sliderImg.png";
 
