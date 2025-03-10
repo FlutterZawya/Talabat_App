@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/utils/styles/app_colors.dart';
+import 'widgets/rating_view_body.dart';
 
 class RatingView extends StatelessWidget {
   const RatingView({super.key});
@@ -18,6 +19,7 @@ class RatingView extends StatelessWidget {
           onPressed: () => Navigator.pop(context),
         ),
       ),
+      body: RatingViewBody(),
     );
   }
 }
