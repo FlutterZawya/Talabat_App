@@ -14,17 +14,20 @@ class CustomRatingViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     RatingViewModel ratingViewModel = ratingViewsData[ratingViewIndex];
     return Center(
-      child: Column(
-        children: [
-          SizedBox(height: 24),
-          CustomRatingViewImage(ratingViewIndex: ratingViewIndex),
-          SizedBox(height: 16),
-          Text(ratingViewModel.quistion, style: AppStyles.bold20),
-          SizedBox(height: 16),
-          CustomRatingStars(ratingViewIndex: ratingViewIndex),
-          SizedBox(height: 24),
-          CustomSuggestedSectoin(ratingViewIndex: ratingViewIndex),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            SizedBox(height: 44),
+            CustomRatingViewImage(ratingViewIndex: ratingViewIndex),
+            SizedBox(height: 16),
+            Text(ratingViewModel.quistion, style: AppStyles.bold20),
+            SizedBox(height: 16),
+            CustomRatingStars(ratingViewIndex: ratingViewIndex),
+            SizedBox(height: 24),
+            CustomSuggestedSectoin(ratingViewIndex: ratingViewIndex),
+          ],
+        ),
       ),
     );
   }

@@ -16,8 +16,8 @@ class CustomSuggestedSectoin extends StatelessWidget {
   Widget build(BuildContext context) {
     RatingViewModel ratingViewModel = ratingViewsData[ratingViewIndex];
     return Wrap(
-      spacing: 10,
-      runSpacing: 10,
+      spacing: 24,
+      runSpacing: 15,
       alignment: WrapAlignment.center,
       children: List.generate(
         ratingViewModel.ratingMap.length,

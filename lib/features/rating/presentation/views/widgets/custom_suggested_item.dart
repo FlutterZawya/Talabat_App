@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles/app_colors.dart';
@@ -23,6 +21,8 @@ class _CustomSuggestedItemState extends State<CustomSuggestedItem> {
   bool isActive = false;
   @override
   Widget build(BuildContext context) {
+    isActive =
+        ratingViewsData[widget.ratingViewIndex].ratingMap[widget.text] ?? false;
     return InkWell(
       onTap: () {
         if (isActive) {
@@ -30,19 +30,15 @@ class _CustomSuggestedItemState extends State<CustomSuggestedItem> {
           ratingViewsData[widget.ratingViewIndex].ratingMap[widget.text] =
               isActive;
           setState(() {});
-          //TODO : delete this line
-          log(ratingViewsData[widget.ratingViewIndex].ratingMap.toString());
         } else {
           isActive = true;
           ratingViewsData[widget.ratingViewIndex].ratingMap[widget.text] =
               isActive;
           setState(() {});
-          //TODO : delete this line
-          log(ratingViewsData[widget.ratingViewIndex].ratingMap.toString());
         }
       },
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+        padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           color: isActive ? AppColors.main : AppColors.white,
