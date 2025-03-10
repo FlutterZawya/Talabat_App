@@ -35,7 +35,12 @@ class AuthOptionViewBody extends StatelessWidget {
         SizedBox(height: 10),
         CustomAuthOptionButton(onpressed: () {}, type: AuthOptionType.facebook),
         SizedBox(height: 10),
-        CustomAuthOptionButton(onpressed: () {}, type: AuthOptionType.apple),
+        CustomAuthOptionButton(
+            onpressed: () {
+              //TODO : temp Navigation , and when i finish the rating view will be removed
+              GoRouter.of(context).push(AppRoutes.ratingView);
+            },
+            type: AuthOptionType.apple),
         SizedBox(height: 10),
         CustomAuthOptionButton(
             onpressed: () {
