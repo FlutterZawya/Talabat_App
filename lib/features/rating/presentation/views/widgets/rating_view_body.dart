@@ -29,9 +29,13 @@ class _RatingViewBodyState extends State<RatingViewBody> {
           child: CustomButton(
             text: ratingViewsData[index].buttonText,
             onPressed: () {
-              setState(() {
-                index = (index + 1) % ratingViewsData.length;
-              });
+              if (index == ratingViewsData.length - 1) {
+                //TODO : Navigate to add_a_notes_view
+                log('Navigate to add_a_notes_view');
+              }
+              //TODO : when we navigate to add_a_notes_view we delete the % from the next line
+              index = (index + 1) % ratingViewsData.length;
+              setState(() {});
               log(index.toString());
             },
           ),

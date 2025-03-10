@@ -46,12 +46,10 @@ class _CustomSuggestedItemState extends State<CustomSuggestedItem> {
             color: isActive ? AppColors.main : AppColors.grey400,
           ),
         ),
-        child: Flexible(
-          child: Text(
-            widget.text,
-            style: AppStyles.bold14.copyWith(
-              color: isActive ? AppColors.white : AppColors.black,
-            ),
+        child: Text(
+          widget.text,
+          style: AppStyles.bold14.copyWith(
+            color: isActive ? AppColors.white : AppColors.black,
           ),
         ),
       ),
