@@ -7,6 +7,6 @@ class RatingViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomRatingViewBody(ratingViewIndex: 1);
+    return CustomRatingViewBody(ratingViewIndex: 4);
   }
 }
