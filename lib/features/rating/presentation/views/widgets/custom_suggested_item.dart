@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles/app_colors.dart';
@@ -28,11 +30,15 @@ class _CustomSuggestedItemState extends State<CustomSuggestedItem> {
           ratingViewsData[widget.ratingViewIndex].ratingMap[widget.text] =
               isActive;
           setState(() {});
+          //TODO : delete this line
+          log(ratingViewsData[widget.ratingViewIndex].ratingMap.toString());
         } else {
           isActive = true;
           ratingViewsData[widget.ratingViewIndex].ratingMap[widget.text] =
               isActive;
           setState(() {});
+          //TODO : delete this line
+          log(ratingViewsData[widget.ratingViewIndex].ratingMap.toString());
         }
       },
       child: Container(
