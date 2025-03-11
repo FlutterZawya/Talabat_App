@@ -1,7 +1,7 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../core/utils/routes/app_routes.dart';
 import '../../../../../core/utils/widgets/custom_button.dart';
 import '../../../../../core/utils/widgets/custom_text_button.dart';
 import '../../../data/content/rating_views_data.dart';
@@ -29,19 +29,17 @@ class _RatingViewBodyState extends State<RatingViewBody> {
           child: CustomButton(
             text: ratingViewsData[index].buttonText,
             onPressed: () {
-              if (index == ratingViewsData.length - 1) {
-                //TODO : Navigate to add_a_notes_view
-                log('Navigate to add_a_notes_view');
+              index++;
+              if (index == ratingViewsData.length) {
+                index = 0;
+                GoRouter.of(context).pushReplacement(AppRoutes.addNotesView);
               }
-              //TODO : when we navigate to add_a_notes_view we delete the % from the next line
-              index = (index + 1) % ratingViewsData.length;
               setState(() {});
-              log(index.toString());
             },
           ),
         ),
         SizedBox(height: 44),
       ],
-    ); //0 ... 5
+    );
   }
 }
