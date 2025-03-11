@@ -33,7 +33,12 @@ class AuthOptionViewBody extends StatelessWidget {
         SizedBox(height: 25),
         CustomAuthOptionButton(onpressed: () {}, type: AuthOptionType.google),
         SizedBox(height: 10),
-        CustomAuthOptionButton(onpressed: () {}, type: AuthOptionType.facebook),
+        CustomAuthOptionButton(
+            onpressed: () {
+              //TODO : temp Navigation , and when i finish the rating view will be removed
+              GoRouter.of(context).push(AppRoutes.yourOrdersView);
+            },
+            type: AuthOptionType.facebook),
         SizedBox(height: 10),
         CustomAuthOptionButton(
             onpressed: () {

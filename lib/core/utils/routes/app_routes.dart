@@ -13,6 +13,7 @@ import '../../../features/home/presentation/views/home_view.dart';
 import '../../../features/rating/presentation/views/add_notes_view.dart';
 import '../../../features/rating/presentation/views/rating_view.dart';
 import '../../../features/splash/presentation/views/splash_view.dart';
+import '../../../features/your_orders/presentation/views/your_orders_view.dart';
 import '../views/talabat_app_bottom_nav_bar.dart';
 
 abstract class AppRoutes {
@@ -32,6 +33,7 @@ abstract class AppRoutes {
   static const String countryView = '/countryView';
   static const String ratingView = '/ratingView';
   static const String addNotesView = '/addNotesView';
+  static const String yourOrdersView = '/yourOrdersView';
 
   static final router = GoRouter(
     routes: [
@@ -90,6 +92,10 @@ abstract class AppRoutes {
       GoRoute(
         path: addNotesView,
         builder: (context, state) => const AddNotesView(),
+      ),
+      GoRoute(
+        path: yourOrdersView,
+        builder: (context, state) => const YourOrdersView(),
       ),
     ],
   );
