@@ -4,6 +4,7 @@ import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../../../core/utils/widgets/custom_restaurant_image.dart';
 import '../../../../../core/utils/widgets/custom_text_button.dart';
+import 'custom_simple_dialog.dart';
 
 class YourOrdersCard extends StatelessWidget {
   const YourOrdersCard({super.key});
@@ -40,7 +41,13 @@ class YourOrdersCard extends StatelessWidget {
                     Flexible(
                       child: CustomTextButton(
                         text: "↻ Re-Order",
-                        onPressed: () {},
+                        onPressed: () {
+                          // show simple dialog here
+                          showDialog(
+                            context: context,
+                            builder: (context) => CustomSimpleDialog(),
+                          );
+                        },
                       ),
                     ),
                     Flexible(
