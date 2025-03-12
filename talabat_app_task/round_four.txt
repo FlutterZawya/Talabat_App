@@ -9,7 +9,7 @@
 => complete home view
 ------------------------------------------------------------------
 #mahmoud:
-=> performance evaluation
+=> performance evaluation [Done]
 ------------------------------------------------------------------
 #youssef:
 => orders view
