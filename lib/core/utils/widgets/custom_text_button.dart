@@ -13,8 +13,12 @@ class CustomTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: onPressed,
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.all(0),
+      ),
       child: Text(
         text,
+        overflow: TextOverflow.ellipsis,
         style: AppStyles.bold14.copyWith(color: AppColors.main),
       ),
     );
