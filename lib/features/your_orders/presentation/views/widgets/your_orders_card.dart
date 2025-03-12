@@ -4,6 +4,7 @@ import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../../../core/utils/widgets/custom_restaurant_image.dart';
 import '../../../../../core/utils/widgets/custom_text_button.dart';
+import 'custom_bottom_sheet.dart';
 import 'custom_simple_dialog.dart';
 
 class YourOrdersCard extends StatelessWidget {
@@ -53,7 +54,13 @@ class YourOrdersCard extends StatelessWidget {
                     Flexible(
                       child: CustomTextButton(
                         text: "😁 Rate Order",
-                        onPressed: () {},
+                        onPressed: () {
+                          // show bottom sheet
+                          showModalBottomSheet(
+                            context: context,
+                            builder: (context) => CustomBottomSheet(),
+                          );
+                        },
                       ),
                     ),
                   ],
