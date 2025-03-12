@@ -12,5 +12,6 @@ abstract class AppColors {
   static const Color grey500 = Color(0xff1e1e1e);
   static const Color inactiveButton = Color(0xffffcdb2);
   static const Color blue = Color(0xff007AFF);
+  static const Color green = Color(0xff49C366);
 
 }
