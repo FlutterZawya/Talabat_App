@@ -11,31 +11,42 @@ class AddNotesForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        TextFormField(
-          maxLines: 4,
-          autofocus: false,
-          maxLength: 100,
-          style: AppStyles.regular16,
-          decoration: InputDecoration(
-            hintText: 'Add a note (optional)',
-            hintStyle: AppStyles.regular16,
-            focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: AppColors.main),
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: TextFormField(
+            maxLines: 6,
+            autofocus: false,
+            maxLength: 200,
+            style: AppStyles.regular16,
+            decoration: InputDecoration(
+              hintText: 'Add a note (optional)',
+              hintStyle: AppStyles.regular16,
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: AppColors.main),
+              ),
+              border: OutlineInputBorder(),
             ),
-            border: OutlineInputBorder(),
+            onChanged: (value) {},
           ),
-          onChanged: (value) {},
         ),
-        SizedBox(height: 24),
-        CustomButton(
-          text: 'Next',
-          onPressed: () {
-            //TODO : Navigete to the next view
-          },
+        SliverToBoxAdapter(child: SizedBox(height: 24)),
+        SliverFillRemaining(
+          hasScrollBody: false,
+          child: Column(
+            children: [
+              Expanded(child: SizedBox(height: 24)),
+              CustomButton(
+                text: 'Next',
+                onPressed: () {
+                  //TODO : Navigete to the next view
+                },
+              ),
+              SizedBox(height: 16),
+            ],
+          ),
         ),
-        SizedBox(height: 24),
+        // SizedBox(height: 24),
       ],
     );
   }

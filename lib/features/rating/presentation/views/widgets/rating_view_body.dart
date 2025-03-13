@@ -38,7 +38,7 @@ class _RatingViewBodyState extends State<RatingViewBody> {
             },
           ),
         ),
-        SizedBox(height: 44),
+        // SizedBox(height: 44),
       ],
     );
   }
