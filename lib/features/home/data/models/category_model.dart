@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:talabat_app/core/utils/routes/app_routes.dart';
 import 'package:talabat_app/core/utils/styles/app_images.dart';
 
