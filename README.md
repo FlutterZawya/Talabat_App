@@ -2,11 +2,11 @@
 
 ## Overview
 
-Talabat Clone is a food delivery application built using Flutter. It allows users to browse restaurants, order food, and track deliveries in real-time. The app features a modern UI, secure payment integration, and a seamless user experience.
+Talabat App is a food delivery application built using Flutter. It allows users to browse restaurants, order food, and track deliveries in real-time. The app features a modern UI, secure payment integration, and a seamless user experience.
 
 ## Features
 
-- **User Authentication**: Sign up, login, and logout using Firebase Authentication.  
+- **User Authentication**: Sign up, login, and logout using BackEnd Authentication.  
 - **Restaurant Listings**: Browse through a list of available restaurants.  
 - **Food Menu**: View menu items with detailed descriptions and images.  
 - **Search & Filters**: Search for restaurants or dishes and apply filters like cuisine type, rating, and price range.  
@@ -20,7 +20,7 @@ Talabat Clone is a food delivery application built using Flutter. It allows user
 
 ## Tech Stack & Packages
 
-- **State Management**: `Bloc`  
+- **State Management**: `Bloc (Cubit)`  
 - **Navigation**: `go_router`  
 - **Database**: `Firebase Firestore` / `SQLite`
 - **Authentication**: `Firebase Auth`  
