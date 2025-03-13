@@ -1,16 +1,32 @@
-# talabat_app
+# Talabat Clone - Flutter App
 
-A new Flutter project.
+## Overview
 
-## Getting Started
+Talabat Clone is a food delivery application built using Flutter. It allows users to browse restaurants, order food, and track deliveries in real-time. The app features a modern UI, secure payment integration, and a seamless user experience.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- **User Authentication**: Sign up, login, and logout using Firebase Authentication.  
+- **Restaurant Listings**: Browse through a list of available restaurants.  
+- **Food Menu**: View menu items with detailed descriptions and images.  
+- **Search & Filters**: Search for restaurants or dishes and apply filters like cuisine type, rating, and price range.  
+- **Cart & Checkout**: Add items to the cart, apply discount codes, and proceed to checkout.  
+- **Payment Integration**: Secure payment processing using `flutter_stripe`, `flutter_paypal`, and other payment gateways.  
+- **Order Tracking**: Real-time tracking of order status and delivery location.  
+- **User Profile**: Manage personal details, addresses, and payment methods.  
+- **Push Notifications**: Receive updates on order status, promotions, and discounts.  
+- **Admin Panel**: Manage restaurants, menu items, orders, and users.  
+- **Dark Mode**: Toggle between light and dark themes.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech Stack & Packages
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **State Management**: `Bloc`  
+- **Navigation**: `go_router`  
+- **Database**: `Firebase Firestore` / `SQLite` / 'Hive'  
+- **Authentication**: `Firebase Auth`  
+- **Backend**: `Firebase Functions` / `.NET` (Optional for additional backend support)  
+- **Local Storage**: `Shared Preferences` / `Hive`  
+- **Payment Integration**: `flutter_stripe`, `flutter_paypal`  
+- **Maps & Location**: `google_maps_flutter`, `geolocator`  
+- **Push Notifications**: `firebase_messaging`  
+- **UI & Icons**: `flutter_svg`, `lottie`, `cached_network_image`  
