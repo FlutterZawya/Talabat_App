@@ -35,7 +35,7 @@ class HomeViewBody extends StatelessWidget {
           // for product navigation
           CustomCategoryListViewBuilder(
             scrollDirection: Axis.horizontal,
-            height: 170,
+            height: 200,
             list: categoryProducts,
             widgetName: 'view',
           ),

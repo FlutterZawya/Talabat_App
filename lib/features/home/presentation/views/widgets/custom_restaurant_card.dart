@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../data/models/category_model.dart';
 
@@ -16,7 +17,9 @@ class CustomRestaurantCard extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: categoryModel.onTap,
+            onTap: () {
+              GoRouter.of(context).push(categoryModel.location);
+            },
             child: Image.asset(categoryModel.categoryImg),
           ),
           SizedBox(height: 16),

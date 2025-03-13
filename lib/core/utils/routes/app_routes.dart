@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 import 'package:talabat_app/features/account/presentation/views/account_settings_view.dart';
 import 'package:talabat_app/features/account/presentation/views/country_view.dart';
-
+import 'package:talabat_app/features/home/presentation/views/food_home_view.dart';
 import '../../../features/auth/presentation/views/auth_option_view.dart';
 import '../../../features/auth/presentation/views/complete_view.dart';
 import '../../../features/auth/presentation/views/login_view.dart';
@@ -27,6 +27,7 @@ abstract class AppRoutes {
   static const String accountSettings = '/accountSettings';
 
   static const String homeView = '/homeView';
+  static const String foodHomeView = '/foodHomeView';
   static const String countryView = '/countryView';
 
   static final router = GoRouter(
@@ -78,6 +79,10 @@ abstract class AppRoutes {
       GoRoute(
         path: countryView,
         builder: (context, state) => const CountryView(),
+      ),
+      GoRoute(
+        path: foodHomeView,
+        builder: (context, state) => const FoodHomeView(),
       ),
     ],
   );

@@ -1,14 +1,17 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:talabat_app/core/utils/routes/app_routes.dart';
 import 'package:talabat_app/core/utils/styles/app_images.dart';
 
 class CategoryModel {
   final String categoryName, categoryImg, offers;
-  final Function()? onTap;
+  final String location;
 
   CategoryModel({
     required this.categoryName,
     required this.categoryImg,
     required this.offers,
-    required this.onTap,
+    required this.location,
   });
 }
 
@@ -18,19 +21,19 @@ List<CategoryModel> categoryViews = [
     categoryName: 'Food',
     categoryImg: AppImages.imagesFood,
     offers: 'Up to 50%',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Talabat Mart',
     categoryImg: AppImages.imagesTalabatMartHome,
     offers: '20 mins',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Groceries',
     categoryImg: AppImages.imagesGrocery,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
 ];
 // The second List =================================================
@@ -39,25 +42,25 @@ List<CategoryModel> categoryProducts = [
     categoryName: 'Health &\nwellness',
     categoryImg: AppImages.imagesHealth,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Flowers',
     categoryImg: AppImages.imagesFlowers,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Coffee',
     categoryImg: AppImages.imagesCoffee,
     offers: '',
-    onTap: () {},
+    location: '',
   ),
   CategoryModel(
     categoryName: 'More shops',
     categoryImg: AppImages.imagesMoreShops,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
 ];
 // The third List ======================================================
@@ -66,31 +69,31 @@ List<CategoryModel> categoryShortCuts = [
     categoryName: 'Past\nOrders',
     categoryImg: AppImages.imagesPastOrder,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Super\nSaver',
     categoryImg: AppImages.imagesSuperSaver,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Must-Tries',
     categoryImg: AppImages.imagesMustTry,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Give Back',
     categoryImg: AppImages.imagesGiveBack,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Best\nSeller',
     categoryImg: AppImages.imagesBestSeller,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
 ];
 // The fourth List =========================================================
@@ -99,24 +102,24 @@ List<CategoryModel> categoryRestaurants = [
     categoryName: 'Allo Beirut ',
     categoryImg: AppImages.imagesAlloBeirut,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Laffah',
     categoryImg: AppImages.imagesLaffah,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Falafil Al\nRabiah Al kha...',
     categoryImg: AppImages.imagesFalafel,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
   CategoryModel(
     categoryName: 'Barbar',
     categoryImg: AppImages.imagesBarbar,
     offers: '',
-    onTap: () {},
+    location: AppRoutes.foodHomeView,
   ),
 ];

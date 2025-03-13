@@ -36,15 +36,9 @@ class TalabatAppBottomNavBarView extends StatelessWidget {
 
 List<Widget> _buildScreens() {
   return const [
-<<<<<<< home_view
     HomeView(), //Home
-    SizedBox(), //Search
-    SizedBox(), //Account
-=======
-    SizedBox(), //Home
     SearchView(), //Search
     AccountView(), //Account
->>>>>>> main
   ];
 }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/styles/app_colors.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../data/models/category_model.dart';
@@ -17,7 +18,9 @@ class CustomShortCutCard extends StatelessWidget {
       child: Column(
         children: [
           InkWell(
-            onTap: categoryModel.onTap,
+            onTap: () {
+              GoRouter.of(context).push(categoryModel.location);
+            },
             child: Container(
               height: 70,
               width: 70,

@@ -1,18 +1,26 @@
 // ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
+  
+  static const String animationsCompleteLottie = "assets/animations/complete_lottie.json";
 
-  static const String animationsCompleteLottie =
-      "assets/animations/complete_lottie.json";
+  static const String iconsArcticonsofferup = "assets/icons/arcticonsofferup.svg";
 
-  static const String imagesActiveAccountIcon =
-      "assets/images/active_account_icon.svg";
+  static const String iconsMdiaboutcircleoutline = "assets/icons/mdiaboutcircleoutline.svg";
 
-  static const String imagesActiveSearchIcon =
-      "assets/images/active_search_icon.svg";
+  static const String iconsMdiwhistleoutline = "assets/icons/mdiwhistleoutline.svg";
 
-  static const String imagesActiveTalabatIcon =
-      "assets/images/active_talabat_icon.svg";
+  static const String iconsNotepad = "assets/icons/notepad.svg";
+
+  static const String iconsNotifications = "assets/icons/notifications.svg";
+
+  static const String iconsUiwpay = "assets/icons/uiwpay.svg";
+
+  static const String imagesActiveAccountIcon = "assets/images/active_account_icon.svg";
+
+  static const String imagesActiveSearchIcon = "assets/images/active_search_icon.svg";
+
+  static const String imagesActiveTalabatIcon = "assets/images/active_talabat_icon.svg";
 
   static const String imagesAlloBeirut = "assets/images/alloBeirut.png";
 
@@ -66,14 +74,11 @@ class AppImages {
 
   static const String imagesHomeImage = "assets/images/homeImage.png";
 
-  static const String imagesInactiveAccountIcon =
-      "assets/images/inactive_account_icon.svg";
+  static const String imagesInactiveAccountIcon = "assets/images/inactive_account_icon.svg";
 
-  static const String imagesInactiveSearchIcon =
-      "assets/images/inactive_search_icon.svg";
+  static const String imagesInactiveSearchIcon = "assets/images/inactive_search_icon.svg";
 
-  static const String imagesInactiveTalabatIcon =
-      "assets/images/inactive_talabat_icon.svg";
+  static const String imagesInactiveTalabatIcon = "assets/images/inactive_talabat_icon.svg";
 
   static const String imagesLaffah = "assets/images/laffah.png";
 
@@ -87,10 +92,20 @@ class AppImages {
 
   static const String imagesPayCard = "assets/images/payCard.png";
 
+  static const String imagesPopularSearchIcon = "assets/images/popular_search_icon.svg";
+
+  static const String imagesSliderImg = "assets/images/sliderImg.png";
+
+  static const String imagesSuperSaver = "assets/images/superSaver.png";
+
   static const String imagesTalabat = "assets/images/talabat.png";
 
   static const String imagesTalabatMart = "assets/images/talabatMart.png";
 
-  static const String imagesTalabatMartHome =
-      "assets/images/talabatMartHome.png";
+  static const String imagesTalabatMartHome = "assets/images/talabatMartHome.png";
+
+  static const String imagesTestSearchImage1 = "assets/images/test_search_image1.png";
+
+  static const String imagesTestSearchImage2 = "assets/images/test_search_image2.png";
 }
+
