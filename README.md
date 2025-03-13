@@ -1,4 +1,4 @@
-# Talabat Clone - Flutter App
+# TalaBat App
 
 ## Overview
 
@@ -22,9 +22,9 @@ Talabat Clone is a food delivery application built using Flutter. It allows user
 
 - **State Management**: `Bloc`  
 - **Navigation**: `go_router`  
-- **Database**: `Firebase Firestore` / `SQLite` / 'Hive'  
+- **Database**: `Firebase Firestore` / `SQLite`
 - **Authentication**: `Firebase Auth`  
-- **Backend**: `Firebase Functions` / `.NET` (Optional for additional backend support)  
+- **Backend**: `.NET`
 - **Local Storage**: `Shared Preferences` / `Hive`  
 - **Payment Integration**: `flutter_stripe`, `flutter_paypal`  
 - **Maps & Location**: `google_maps_flutter`, `geolocator`  
