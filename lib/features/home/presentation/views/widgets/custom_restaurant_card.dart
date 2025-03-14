@@ -3,9 +3,9 @@ import 'package:go_router/go_router.dart';
 import '../../../../../core/utils/styles/app_styles.dart';
 import '../../../data/models/category_model.dart';
 
-class CustomRestaurantCard extends StatelessWidget {
+class CustomRestaurantCardHome extends StatelessWidget {
   final CategoryModel categoryModel;
-  const CustomRestaurantCard({
+  const CustomRestaurantCardHome({
     super.key,
     required this.categoryModel,
   });

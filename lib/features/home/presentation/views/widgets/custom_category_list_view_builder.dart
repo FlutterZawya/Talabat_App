@@ -35,7 +35,7 @@ class CustomCategoryListViewBuilder extends StatelessWidget {
                   ? CustomShortCutCard(
                       categoryModel: list[index],
                     )
-                  : CustomRestaurantCard(
+                  : CustomRestaurantCardHome(
                       categoryModel: list[index],
                     );
         },

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../styles/app_colors.dart';
@@ -32,7 +31,7 @@ class CustomRestaurantCardBody extends StatelessWidget {
             children: [
               Icon(
                 Icons.star,
-                color: AppColors.main,
+                color: Colors.amber,
                 size: 16,
               ),
               Text(

@@ -32,9 +32,13 @@ class AppImages {
 
   static const String imagesAuthView = "assets/images/authView.png";
 
+  static const String imagesBackRec = "assets/images/backRec.png";
+
   static const String imagesBarbar = "assets/images/barbar.png";
 
   static const String imagesBestSeller = "assets/images/bestSeller.png";
+
+  static const String imagesBestSeller2 = "assets/images/bestSeller2.png";
 
   static const String imagesCode = "assets/images/code.png";
 
@@ -82,9 +86,17 @@ class AppImages {
 
   static const String imagesLaffah = "assets/images/laffah.png";
 
+  static const String imagesMeal1 = "assets/images/meal1.png";
+
+  static const String imagesMeal2 = "assets/images/meal2.png";
+
+  static const String imagesMeal3 = "assets/images/meal3.png";
+
   static const String imagesMoreShops = "assets/images/moreShops.png";
 
   static const String imagesMustTry = "assets/images/mustTry.png";
+
+  static const String imagesMustTry2 = "assets/images/mustTry2.png";
 
   static const String imagesOrders = "assets/images/orders.png";
 
@@ -98,7 +110,11 @@ class AppImages {
 
   static const String imagesSuperSaver = "assets/images/superSaver.png";
 
+  static const String imagesSuperSaver2 = "assets/images/superSaver2.png";
+
   static const String imagesTalabat = "assets/images/talabat.png";
+
+  static const String imagesTalabatBro = "assets/images/talabatBro.png";
 
   static const String imagesTalabatMart = "assets/images/talabatMart.png";
 
