@@ -16,17 +16,15 @@ class FoodHomeView extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 5),
           child: Column(
+            spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(height: 32),
+              SizedBox(height: 10),
               CustomFoodHomeViewAppBar(),
-              SizedBox(height: 16),
               CustomFilteringItems(),
-              SizedBox(height: 16),
               OffersListViewBuilder(),
-              SizedBox(height: 26),
+              SizedBox(height: 6),
               Text(' Great value deals', style: AppStyles.bold18),
-              SizedBox(height: 16),
               MealListViewBuilder(),
               AllRestaurantListViewBuilder()
             ],
