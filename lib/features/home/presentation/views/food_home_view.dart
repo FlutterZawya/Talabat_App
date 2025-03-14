@@ -19,7 +19,7 @@ class FoodHomeView extends StatelessWidget {
             spacing: 16,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(height: 10),
+              SizedBox(height: 16),
               CustomFoodHomeViewAppBar(),
               CustomFilteringItems(),
               OffersListViewBuilder(),
