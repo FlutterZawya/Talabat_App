@@ -18,14 +18,14 @@ class FoodHomeView extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              SizedBox(height: 16),
+              SizedBox(height: 32),
               CustomFoodHomeViewAppBar(),
               SizedBox(height: 16),
               CustomFilteringItems(),
               SizedBox(height: 16),
               OffersListViewBuilder(),
               SizedBox(height: 26),
-              Text('Great value deals', style: AppStyles.bold18),
+              Text(' Great value deals', style: AppStyles.bold18),
               SizedBox(height: 16),
               MealListViewBuilder(),
               ListView.builder(
@@ -34,7 +34,7 @@ class FoodHomeView extends StatelessWidget {
                 physics: NeverScrollableScrollPhysics(),
                 itemBuilder: (context, index) {
                   return index == 0
-                      ? Text('All Restaurants', style: AppStyles.bold18)
+                      ? Text(' All Restaurants', style: AppStyles.bold18)
                       : CustomRestaurantCard();
                 },
               )
