@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:talabat_app/core/utils/styles/app_styles.dart';
-import 'package:talabat_app/core/utils/widgets/custom_restaurant_card.dart';
+import 'widgets/all_restaurant_list_view_builder.dart';
 import 'widgets/custom_filtering_items.dart';
 import 'widgets/custom_food_home_view_appbar.dart';
 import 'widgets/meal_list_view_builder.dart';
@@ -28,16 +28,7 @@ class FoodHomeView extends StatelessWidget {
               Text(' Great value deals', style: AppStyles.bold18),
               SizedBox(height: 16),
               MealListViewBuilder(),
-              ListView.builder(
-                itemCount: 5,
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                itemBuilder: (context, index) {
-                  return index == 0
-                      ? Text(' All Restaurants', style: AppStyles.bold18)
-                      : CustomRestaurantCard();
-                },
-              )
+              AllRestaurantListViewBuilder()
             ],
           ),
         ),
