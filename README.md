@@ -3,7 +3,7 @@
 ## Overview
 
 Talabat App is a food delivery application built using Flutter. It allows users to browse restaurants, order food, and track deliveries in real-time. The app features a modern UI, secure payment integration, and a seamless user experience.
-
+ 
 ## Features
 
 - **User Authentication**: Sign up, login, and logout using BackEnd Authentication.  
